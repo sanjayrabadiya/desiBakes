@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="shortcut icon" href="images/favicon.jpg" type="image/jpg">
+		<title>Desi Bakes</title>
+
+		<link rel="stylesheet" type="text/css" href="css/plugins.css">
+		<link rel="stylesheet" type="text/css" href="css/custom-dev.css">
+	</head>
+	<body>
+		<div class="sidebar">			
+			<div class="d-flex align-items-center justify-content-between">
+				<div class="header-search-mobile">
+					<form method="post">
+						<div class="search-box">
+							<input type="search" placeholder="search" id="search" />
+							<div class="search-icon">
+								<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.375 4.92892H17.6786" stroke="black" stroke-width="1.76786" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M12.375 7.58072H15.0268" stroke="black" stroke-width="1.76786" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M18.5622 10.6745C18.5622 15.3151 14.8055 19.0718 10.1649 19.0718C5.52427 19.0718 1.76758 15.3151 1.76758 10.6745C1.76758 6.03384 5.52427 2.27715 10.1649 2.27715" stroke="black" stroke-width="1.76786" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M19.4466 19.9557L17.6787 18.1879" stroke="black" stroke-width="2.35714" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+
+							</div>
+						</div>									
+					</form>
+				</div>					
+				<button type="button" class="btn-close-sidebar">
+					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+						<path d="M1 17L9.00002 9.00003M9.00002 9.00003L17 1M9.00002 9.00003L1 1M9.00002 9.00003L17 17"
+							stroke="#000" stroke-width="4" stroke-linejoin="round" />
+					</svg>
+				</button>
+			</div>			
+			<div class="sidebar-menu">
+				<ul>
+					<li><a href="javascript:;">Home</a></li>									
+					<li><a href="javascript:;">About</a></li>
+					<li><a href="javascript:;">Recipes</a></li>
+					<li><a href="javascript:;">Buy my Cookbook!</a></li>									
+					<li><a href="javascript:;">Shop</a></li>
+					<li><a href="javascript:;">Travel</a></li>
+					<li><a href="javascript:;">Shop my Amazon</a></li>									
+					<li><a href="javascript:;">Press</a></li>
+					<li><a href="javascript:;">Contact</a></li>
+				</ul>
+			</div>
+			<div class="social-media header-mobile-social-media">
+				<a href="javascript:;" target="_blank" title="Facebook">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M22.4882 10.2322C22.4806 9.81033 22.4472 9.27698 22.3888 8.6326C22.3301 7.98793 22.2461 7.41172 22.1368 6.90398C22.0118 6.33382 21.7403 5.85326 21.3224 5.46261C20.9044 5.07195 20.4181 4.84541 19.8632 4.78284C18.1287 4.58765 15.5077 4.48999 12 4.48999C8.49228 4.48999 5.87116 4.58765 4.13679 4.78284C3.58202 4.84541 3.09758 5.07195 2.68362 5.46261C2.26952 5.85312 1.99997 6.33368 1.87498 6.90398C1.7579 7.41187 1.66987 7.98807 1.61133 8.6326C1.55279 9.27698 1.51956 9.81018 1.51179 10.2322C1.50388 10.6541 1.5 11.2399 1.5 11.99C1.5 12.74 1.50388 13.326 1.51179 13.7478C1.51956 14.1698 1.55279 14.703 1.61133 15.3474C1.66987 15.9921 1.75387 16.5683 1.86333 17.076C1.98832 17.6463 2.25974 18.1269 2.67773 18.5174C3.09571 18.9079 3.58216 19.1346 4.13679 19.197C5.87116 19.3924 8.49214 19.49 12 19.49C15.508 19.49 18.1287 19.3924 19.8632 19.197C20.418 19.1346 20.9024 18.9079 21.3165 18.5174C21.7306 18.1269 22 17.6462 22.125 17.076C22.2421 16.5683 22.3301 15.9919 22.3888 15.3474C22.4472 14.703 22.4804 14.1697 22.4882 13.7478C22.4961 13.326 22.5 12.74 22.5 11.99C22.5 11.2399 22.4961 10.6541 22.4882 10.2322ZM16.1485 12.6229L10.1485 16.3727C10.0391 16.4508 9.90618 16.4898 9.74998 16.4898C9.6329 16.4898 9.51179 16.4586 9.38679 16.3961C9.12904 16.2555 9.00016 16.0368 9.00016 15.7399V8.24007C9.00016 7.94334 9.12904 7.72457 9.38679 7.58389C9.65246 7.44308 9.90633 7.45099 10.1485 7.60734L16.1485 11.3573C16.3828 11.4899 16.4999 11.7009 16.4999 11.99C16.4999 12.2791 16.3828 12.4901 16.1485 12.6229Z" fill="#A5396B"/>
+					</svg>
+				</a>
+				<a href="javascript:;" target="_blank" title="Instagram">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M15.9796 1.98999C19.2993 1.98999 22 4.6206 22 7.85396V16.126C22 19.3594 19.2993 21.99 15.9796 21.99H8.02047C4.70076 21.99 2 19.3594 2 16.126V7.85396C2 4.6206 4.70076 1.98999 8.02047 1.98999H15.9796ZM19.826 16.126V7.85396C19.826 5.78817 18.1005 4.10754 15.9796 4.10754H8.02047C5.89955 4.10754 4.17406 5.78817 4.17406 7.85396V16.126C4.17406 18.1918 5.89955 19.8724 8.02047 19.8724H15.9796C18.1005 19.8724 19.826 18.1918 19.826 16.126ZM12.0388 6.40698C13.7978 6.45699 15.2649 7.04198 16.2813 8.09885C17.2471 9.10312 17.7393 10.4492 17.7048 11.9914C17.6716 13.4687 17.0726 14.8526 16.0182 15.8883C14.9471 16.9404 13.5201 17.5199 12 17.5199C8.85429 17.5199 6.29502 15.0272 6.29502 11.9632C6.29502 8.84502 8.88442 6.31712 12.0388 6.40698ZM15.0482 11.9349C15.0615 11.341 14.9498 10.5002 14.3419 9.86819C13.8203 9.32572 12.9971 9.02347 11.9613 8.994C11.9334 8.99321 11.9057 8.99285 11.878 8.99285C11.1065 8.99285 10.3766 9.3012 9.82256 9.86106C9.26133 10.4283 8.95219 11.1748 8.95219 11.9632C8.95219 13.6001 10.3194 14.9318 12 14.9318C13.6716 14.9318 15.0105 13.6154 15.0482 11.9349ZM17.3905 5.49662C18.0685 5.49662 18.6181 6.03191 18.6181 6.69227C18.6181 7.35256 18.0685 7.88785 17.3905 7.88785C16.7125 7.88785 16.1629 7.35256 16.1629 6.69227C16.1629 6.03191 16.7125 5.49662 17.3905 5.49662Z" fill="#A5396B"/>
+					</svg>
+				</a>
+				<a href="javascript:;" target="_blank" title="pinterest">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M10.7637 15.2176C10.2077 17.9703 9.52955 20.6101 7.52088 21.99C6.90029 17.8281 8.43178 14.7028 9.14286 11.3848C7.93108 9.45487 9.28861 5.57269 11.845 6.52942C14.9902 7.70595 9.12053 13.7014 13.0615 14.4513C17.1752 15.2329 18.8548 7.70125 16.3043 5.25181C12.6184 1.71518 5.57332 5.17072 6.43956 10.2341C6.65112 11.4729 8.00277 11.8479 6.98022 13.5568C4.62129 13.062 3.91608 11.3025 4.00775 8.95652C4.1535 5.11782 7.65604 2.4298 11.1692 2.05721C15.612 1.58707 19.7821 3.60045 20.3581 7.55198C21.0057 12.0124 18.3529 16.8431 13.601 16.4952C12.314 16.4 11.7733 15.7971 10.7637 15.2176Z" fill="#A5396B"/>
+					</svg>
+				</a>
+				<a href="javascript:;" target="_blank" title="Youtube">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M22.4882 10.2322C22.4806 9.81033 22.4472 9.27698 22.3888 8.6326C22.3301 7.98793 22.2461 7.41172 22.1368 6.90398C22.0118 6.33382 21.7403 5.85326 21.3224 5.46261C20.9044 5.07195 20.4181 4.84541 19.8632 4.78284C18.1287 4.58765 15.5077 4.48999 12 4.48999C8.49228 4.48999 5.87116 4.58765 4.13679 4.78284C3.58202 4.84541 3.09758 5.07195 2.68362 5.46261C2.26952 5.85312 1.99997 6.33368 1.87498 6.90398C1.7579 7.41187 1.66987 7.98807 1.61133 8.6326C1.55279 9.27698 1.51956 9.81018 1.51179 10.2322C1.50388 10.6541 1.5 11.2399 1.5 11.99C1.5 12.74 1.50388 13.326 1.51179 13.7478C1.51956 14.1698 1.55279 14.703 1.61133 15.3474C1.66987 15.9921 1.75387 16.5683 1.86333 17.076C1.98832 17.6463 2.25974 18.1269 2.67773 18.5174C3.09571 18.9079 3.58216 19.1346 4.13679 19.197C5.87116 19.3924 8.49214 19.49 12 19.49C15.508 19.49 18.1287 19.3924 19.8632 19.197C20.418 19.1346 20.9024 18.9079 21.3165 18.5174C21.7306 18.1269 22 17.6462 22.125 17.076C22.2421 16.5683 22.3301 15.9919 22.3888 15.3474C22.4472 14.703 22.4804 14.1697 22.4882 13.7478C22.4961 13.326 22.5 12.74 22.5 11.99C22.5 11.2399 22.4961 10.6541 22.4882 10.2322ZM16.1485 12.6229L10.1485 16.3727C10.0391 16.4508 9.90618 16.4898 9.74998 16.4898C9.6329 16.4898 9.51179 16.4586 9.38679 16.3961C9.12904 16.2555 9.00016 16.0368 9.00016 15.7399V8.24007C9.00016 7.94334 9.12904 7.72457 9.38679 7.58389C9.65246 7.44308 9.90633 7.45099 10.1485 7.60734L16.1485 11.3573C16.3828 11.4899 16.4999 11.7009 16.4999 11.99C16.4999 12.2791 16.3828 12.4901 16.1485 12.6229Z" fill="#A5396B"/>
+					</svg>
+				</a>
+			</div>				
+		</div>
+		<div class="announcebar">
+			<div class="custom-container">
+				<div class="wrapper">
+					<div class="d-flex align-items-center justify-content-center">
+						<div class="announcebar-book">
+							<img src="images/desi_bakes_white.png" alt="Desi Bakes_white.png" class="lazyload" />
+						</div>
+						<p>Introducing</p>
+						<h2>Desi Bakes</h2>
+						<div class="btn-order-now">
+							<a href="javascript:;" class="btn-custom">Order Now</a>
+						</div>
+						<div class="social-media display-desktop">
+							<a href="javascript:;" target="_blank" title="Facebook">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M22.4882 10.2322C22.4806 9.81033 22.4472 9.27698 22.3888 8.6326C22.3301 7.98793 22.2461 7.41172 22.1368 6.90398C22.0118 6.33382 21.7403 5.85326 21.3224 5.46261C20.9044 5.07195 20.4181 4.84541 19.8632 4.78284C18.1287 4.58765 15.5077 4.48999 12 4.48999C8.49228 4.48999 5.87116 4.58765 4.13679 4.78284C3.58202 4.84541 3.09758 5.07195 2.68362 5.46261C2.26952 5.85312 1.99997 6.33368 1.87498 6.90398C1.7579 7.41187 1.66987 7.98807 1.61133 8.6326C1.55279 9.27698 1.51956 9.81018 1.51179 10.2322C1.50388 10.6541 1.5 11.2399 1.5 11.99C1.5 12.74 1.50388 13.326 1.51179 13.7478C1.51956 14.1698 1.55279 14.703 1.61133 15.3474C1.66987 15.9921 1.75387 16.5683 1.86333 17.076C1.98832 17.6463 2.25974 18.1269 2.67773 18.5174C3.09571 18.9079 3.58216 19.1346 4.13679 19.197C5.87116 19.3924 8.49214 19.49 12 19.49C15.508 19.49 18.1287 19.3924 19.8632 19.197C20.418 19.1346 20.9024 18.9079 21.3165 18.5174C21.7306 18.1269 22 17.6462 22.125 17.076C22.2421 16.5683 22.3301 15.9919 22.3888 15.3474C22.4472 14.703 22.4804 14.1697 22.4882 13.7478C22.4961 13.326 22.5 12.74 22.5 11.99C22.5 11.2399 22.4961 10.6541 22.4882 10.2322ZM16.1485 12.6229L10.1485 16.3727C10.0391 16.4508 9.90618 16.4898 9.74998 16.4898C9.6329 16.4898 9.51179 16.4586 9.38679 16.3961C9.12904 16.2555 9.00016 16.0368 9.00016 15.7399V8.24007C9.00016 7.94334 9.12904 7.72457 9.38679 7.58389C9.65246 7.44308 9.90633 7.45099 10.1485 7.60734L16.1485 11.3573C16.3828 11.4899 16.4999 11.7009 16.4999 11.99C16.4999 12.2791 16.3828 12.4901 16.1485 12.6229Z" fill="#A5396B"/>
+								</svg>
+							</a>
+							<a href="javascript:;" target="_blank" title="Instagram">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M15.9796 1.98999C19.2993 1.98999 22 4.6206 22 7.85396V16.126C22 19.3594 19.2993 21.99 15.9796 21.99H8.02047C4.70076 21.99 2 19.3594 2 16.126V7.85396C2 4.6206 4.70076 1.98999 8.02047 1.98999H15.9796ZM19.826 16.126V7.85396C19.826 5.78817 18.1005 4.10754 15.9796 4.10754H8.02047C5.89955 4.10754 4.17406 5.78817 4.17406 7.85396V16.126C4.17406 18.1918 5.89955 19.8724 8.02047 19.8724H15.9796C18.1005 19.8724 19.826 18.1918 19.826 16.126ZM12.0388 6.40698C13.7978 6.45699 15.2649 7.04198 16.2813 8.09885C17.2471 9.10312 17.7393 10.4492 17.7048 11.9914C17.6716 13.4687 17.0726 14.8526 16.0182 15.8883C14.9471 16.9404 13.5201 17.5199 12 17.5199C8.85429 17.5199 6.29502 15.0272 6.29502 11.9632C6.29502 8.84502 8.88442 6.31712 12.0388 6.40698ZM15.0482 11.9349C15.0615 11.341 14.9498 10.5002 14.3419 9.86819C13.8203 9.32572 12.9971 9.02347 11.9613 8.994C11.9334 8.99321 11.9057 8.99285 11.878 8.99285C11.1065 8.99285 10.3766 9.3012 9.82256 9.86106C9.26133 10.4283 8.95219 11.1748 8.95219 11.9632C8.95219 13.6001 10.3194 14.9318 12 14.9318C13.6716 14.9318 15.0105 13.6154 15.0482 11.9349ZM17.3905 5.49662C18.0685 5.49662 18.6181 6.03191 18.6181 6.69227C18.6181 7.35256 18.0685 7.88785 17.3905 7.88785C16.7125 7.88785 16.1629 7.35256 16.1629 6.69227C16.1629 6.03191 16.7125 5.49662 17.3905 5.49662Z" fill="#A5396B"/>
+								</svg>
+							</a>
+							<a href="javascript:;" target="_blank" title="pinterest">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M10.7637 15.2176C10.2077 17.9703 9.52955 20.6101 7.52088 21.99C6.90029 17.8281 8.43178 14.7028 9.14286 11.3848C7.93108 9.45487 9.28861 5.57269 11.845 6.52942C14.9902 7.70595 9.12053 13.7014 13.0615 14.4513C17.1752 15.2329 18.8548 7.70125 16.3043 5.25181C12.6184 1.71518 5.57332 5.17072 6.43956 10.2341C6.65112 11.4729 8.00277 11.8479 6.98022 13.5568C4.62129 13.062 3.91608 11.3025 4.00775 8.95652C4.1535 5.11782 7.65604 2.4298 11.1692 2.05721C15.612 1.58707 19.7821 3.60045 20.3581 7.55198C21.0057 12.0124 18.3529 16.8431 13.601 16.4952C12.314 16.4 11.7733 15.7971 10.7637 15.2176Z" fill="#A5396B"/>
+								</svg>
+							</a>
+							<a href="javascript:;" target="_blank" title="Youtube">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M22.4882 10.2322C22.4806 9.81033 22.4472 9.27698 22.3888 8.6326C22.3301 7.98793 22.2461 7.41172 22.1368 6.90398C22.0118 6.33382 21.7403 5.85326 21.3224 5.46261C20.9044 5.07195 20.4181 4.84541 19.8632 4.78284C18.1287 4.58765 15.5077 4.48999 12 4.48999C8.49228 4.48999 5.87116 4.58765 4.13679 4.78284C3.58202 4.84541 3.09758 5.07195 2.68362 5.46261C2.26952 5.85312 1.99997 6.33368 1.87498 6.90398C1.7579 7.41187 1.66987 7.98807 1.61133 8.6326C1.55279 9.27698 1.51956 9.81018 1.51179 10.2322C1.50388 10.6541 1.5 11.2399 1.5 11.99C1.5 12.74 1.50388 13.326 1.51179 13.7478C1.51956 14.1698 1.55279 14.703 1.61133 15.3474C1.66987 15.9921 1.75387 16.5683 1.86333 17.076C1.98832 17.6463 2.25974 18.1269 2.67773 18.5174C3.09571 18.9079 3.58216 19.1346 4.13679 19.197C5.87116 19.3924 8.49214 19.49 12 19.49C15.508 19.49 18.1287 19.3924 19.8632 19.197C20.418 19.1346 20.9024 18.9079 21.3165 18.5174C21.7306 18.1269 22 17.6462 22.125 17.076C22.2421 16.5683 22.3301 15.9919 22.3888 15.3474C22.4472 14.703 22.4804 14.1697 22.4882 13.7478C22.4961 13.326 22.5 12.74 22.5 11.99C22.5 11.2399 22.4961 10.6541 22.4882 10.2322ZM16.1485 12.6229L10.1485 16.3727C10.0391 16.4508 9.90618 16.4898 9.74998 16.4898C9.6329 16.4898 9.51179 16.4586 9.38679 16.3961C9.12904 16.2555 9.00016 16.0368 9.00016 15.7399V8.24007C9.00016 7.94334 9.12904 7.72457 9.38679 7.58389C9.65246 7.44308 9.90633 7.45099 10.1485 7.60734L16.1485 11.3573C16.3828 11.4899 16.4999 11.7009 16.4999 11.99C16.4999 12.2791 16.3828 12.4901 16.1485 12.6229Z" fill="#A5396B"/>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<header>
+			<div class="header-top">	
+				<div class="custom-container">
+					<div class="wrapper d-flex align-items-center justify-content-between">									
+						<div class="logo">
+							<a href="index.html" title="Shey cooks">
+								<img src="images/logo.png" alt="logo" title="Ami Cordert">
+							</a>
+						</div>
+						<div class="menu-icon ml-auto display-mobile">
+							<svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect x="0.359375" y="0.571411" width="17.28" height="2.46858" rx="1.23429" fill="#A5396B"/>
+								<rect x="0.359375" y="7.36002" width="17.28" height="2.46858" rx="1.23429" fill="#A5396B"/>
+								<rect x="0.359375" y="13.5315" width="17.28" height="2.46858" rx="1.23429" fill="#A5396B"/>
+							</svg>
+
+						</div>
+						<div class="header-right ml-auto display-desktop">
+							<div class="d-flex align-items-center">
+								<div class="menu">
+									<ul class="d-flex">
+										<li><a href="javascript:;">Recipes</a></li>									
+										<li><a href="javascript:;">About</a></li>
+										<li><a href="javascript:;">Contact</a></li>
+									</ul>
+								</div>
+								<div class="header-search">
+									<form method="post">
+										<div class="search-box">
+											<input type="search" placeholder="search" id="search" />
+											<div class="search-icon">
+												<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12.375 4.92892H17.6786" stroke="black" stroke-width="1.76786" stroke-linecap="round" stroke-linejoin="round"/>
+													<path d="M12.375 7.58072H15.0268" stroke="black" stroke-width="1.76786" stroke-linecap="round" stroke-linejoin="round"/>
+													<path d="M18.5622 10.6745C18.5622 15.3151 14.8055 19.0718 10.1649 19.0718C5.52427 19.0718 1.76758 15.3151 1.76758 10.6745C1.76758 6.03384 5.52427 2.27715 10.1649 2.27715" stroke="black" stroke-width="1.76786" stroke-linecap="round" stroke-linejoin="round"/>
+													<path d="M19.4466 19.9557L17.6787 18.1879" stroke="black" stroke-width="2.35714" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+
+											</div>
+										</div>									
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-main-menu display-desktop">
+				<div class="custom-container">
+					<div class="main-menu">
+						<ul>
+							<li><a href="javascript:;">Home</a></li>									
+							<li><a href="javascript:;">About</a></li>
+							<li><a href="javascript:;">Recipes</a></li>
+							<li><a href="javascript:;">Buy my Cookbook!</a></li>									
+							<li><a href="javascript:;">Shop</a></li>
+							<li><a href="javascript:;">Travel</a></li>
+							<li><a href="javascript:;">Shop my Amazon</a></li>									
+							<li><a href="javascript:;">Press</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="home-product-box">
+			<div class="custom-container-small">				
+				<div class="product-box-list">
+					<div class="item">
+						<div class="prdt-box">
+							<div class="image-box">
+								<a href="javascript;">
+									<img src="images/product-1.jpg" alt="product-1" class="lazyload">
+								</a>
+							</div>
+							<div class="details">
+								<div class="prdt-category d-flex align-items-center justify-content-between">
+									<h2><a href="javascript:;">Dessert</a> </h2>
+									<div class="play-icon">
+										<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3.26 0.670001L7.59 5H0.0899999C0.243044 4.08067 0.609555 3.21004 1.1601 2.45804C1.71063 1.70604 2.42986 1.09363 3.26 0.670001ZM9.08 4.72357e-07H6C5.81 4.72357e-07 5.62 0.0100005 5.43 0.0200005L10.41 5H14.08L9.08 4.72357e-07ZM16 4.72357e-07H11.92L16.92 5H21.91C21.6757 3.60207 20.9533 2.33251 19.8712 1.41702C18.7891 0.501533 17.4174 -0.000562172 16 4.72357e-07ZM9.4819 16.626L14.4819 13.876C14.6389 13.7899 14.7699 13.6631 14.8611 13.509C14.9523 13.3549 15.0005 13.1791 15.0005 13C15.0005 12.8209 14.9523 12.6451 14.8611 12.491C14.7699 12.3369 14.6389 12.2101 14.4819 12.124L9.4819 9.374C9.32965 9.29027 9.15821 9.24765 8.98447 9.25035C8.81074 9.25305 8.64071 9.30096 8.49113 9.38938C8.34155 9.4778 8.21759 9.60367 8.13147 9.75458C8.04535 9.9055 8.00004 10.0762 8 10.25V15.75C8.00004 15.9238 8.04535 16.0945 8.13147 16.2454C8.21759 16.3963 8.34155 16.5222 8.49113 16.6106C8.64071 16.699 8.81074 16.747 8.98447 16.7497C9.15821 16.7523 9.32965 16.7097 9.4819 16.626ZM22 7V16C21.9987 17.5909 21.3662 19.1163 20.2412 20.2412C19.1163 21.3662 17.5909 21.9987 16 22H6C4.40909 21.9987 2.88371 21.3662 1.75876 20.2412C0.633821 19.1163 0.0012712 17.5909 0 16V7H22Z" fill="#A5396B"/>
+										</svg>
+									</div>
+								</div>
+								<div class="color-list">
+									<div class="item bg-darkpink">LV</div>
+									<div class="item bg-lightpink">EG</div>
+									<div class="item bg-green">NF</div>
+									<div class="item bg-orange">VG</div>
+									<div class="item bg-lightpink-heavy">DF</div>
+								</div>
+								<h3><a href="javascript:;">Lorem Ipsum is simply dummy text</a></h3>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="prdt-box">
+							<div class="image-box">
+								<a href="javascript;">
+									<img src="images/product-2.jpg" alt="product-2" class="lazyload">
+								</a>
+							</div>
+							<div class="details">
+								<div class="prdt-category d-flex align-items-center justify-content-between">
+									<h2><a href="javascript:;">Dessert</a> </h2>
+									<div class="play-icon">
+										<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3.26 0.670001L7.59 5H0.0899999C0.243044 4.08067 0.609555 3.21004 1.1601 2.45804C1.71063 1.70604 2.42986 1.09363 3.26 0.670001ZM9.08 4.72357e-07H6C5.81 4.72357e-07 5.62 0.0100005 5.43 0.0200005L10.41 5H14.08L9.08 4.72357e-07ZM16 4.72357e-07H11.92L16.92 5H21.91C21.6757 3.60207 20.9533 2.33251 19.8712 1.41702C18.7891 0.501533 17.4174 -0.000562172 16 4.72357e-07ZM9.4819 16.626L14.4819 13.876C14.6389 13.7899 14.7699 13.6631 14.8611 13.509C14.9523 13.3549 15.0005 13.1791 15.0005 13C15.0005 12.8209 14.9523 12.6451 14.8611 12.491C14.7699 12.3369 14.6389 12.2101 14.4819 12.124L9.4819 9.374C9.32965 9.29027 9.15821 9.24765 8.98447 9.25035C8.81074 9.25305 8.64071 9.30096 8.49113 9.38938C8.34155 9.4778 8.21759 9.60367 8.13147 9.75458C8.04535 9.9055 8.00004 10.0762 8 10.25V15.75C8.00004 15.9238 8.04535 16.0945 8.13147 16.2454C8.21759 16.3963 8.34155 16.5222 8.49113 16.6106C8.64071 16.699 8.81074 16.747 8.98447 16.7497C9.15821 16.7523 9.32965 16.7097 9.4819 16.626ZM22 7V16C21.9987 17.5909 21.3662 19.1163 20.2412 20.2412C19.1163 21.3662 17.5909 21.9987 16 22H6C4.40909 21.9987 2.88371 21.3662 1.75876 20.2412C0.633821 19.1163 0.0012712 17.5909 0 16V7H22Z" fill="#A5396B"/>
+										</svg>
+									</div>
+								</div>
+								<div class="color-list">
+									<div class="item bg-darkpink">LV</div>
+									<div class="item bg-lightpink">EG</div>
+									<div class="item bg-green">NF</div>
+									<div class="item bg-orange">VG</div>
+									<div class="item bg-lightpink-heavy">DF</div>
+								</div>
+								<h3><a href="javascript:;">Lorem Ipsum is simply dummy text</a></h3>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="prdt-box">
+							<div class="image-box">
+								<a href="javascript;">
+									<img src="images/product-3.jpg" alt="product-3" class="lazyload">
+								</a>
+							</div>
+							<div class="details">
+								<div class="prdt-category d-flex align-items-center justify-content-between">
+									<h2><a href="javascript:;">Dessert</a> </h2>
+									<div class="play-icon">
+										<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3.26 0.670001L7.59 5H0.0899999C0.243044 4.08067 0.609555 3.21004 1.1601 2.45804C1.71063 1.70604 2.42986 1.09363 3.26 0.670001ZM9.08 4.72357e-07H6C5.81 4.72357e-07 5.62 0.0100005 5.43 0.0200005L10.41 5H14.08L9.08 4.72357e-07ZM16 4.72357e-07H11.92L16.92 5H21.91C21.6757 3.60207 20.9533 2.33251 19.8712 1.41702C18.7891 0.501533 17.4174 -0.000562172 16 4.72357e-07ZM9.4819 16.626L14.4819 13.876C14.6389 13.7899 14.7699 13.6631 14.8611 13.509C14.9523 13.3549 15.0005 13.1791 15.0005 13C15.0005 12.8209 14.9523 12.6451 14.8611 12.491C14.7699 12.3369 14.6389 12.2101 14.4819 12.124L9.4819 9.374C9.32965 9.29027 9.15821 9.24765 8.98447 9.25035C8.81074 9.25305 8.64071 9.30096 8.49113 9.38938C8.34155 9.4778 8.21759 9.60367 8.13147 9.75458C8.04535 9.9055 8.00004 10.0762 8 10.25V15.75C8.00004 15.9238 8.04535 16.0945 8.13147 16.2454C8.21759 16.3963 8.34155 16.5222 8.49113 16.6106C8.64071 16.699 8.81074 16.747 8.98447 16.7497C9.15821 16.7523 9.32965 16.7097 9.4819 16.626ZM22 7V16C21.9987 17.5909 21.3662 19.1163 20.2412 20.2412C19.1163 21.3662 17.5909 21.9987 16 22H6C4.40909 21.9987 2.88371 21.3662 1.75876 20.2412C0.633821 19.1163 0.0012712 17.5909 0 16V7H22Z" fill="#A5396B"/>
+										</svg>
+									</div>
+								</div>
+								<div class="color-list">
+									<div class="item bg-darkpink">LV</div>
+									<div class="item bg-lightpink">EG</div>
+									<div class="item bg-green">NF</div>
+									<div class="item bg-orange">VG</div>
+									<div class="item bg-lightpink-heavy">DF</div>
+								</div>
+								<h3><a href="javascript:;">Lorem Ipsum is simply dummy text</a></h3>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="prdt-box">
+							<div class="image-box">
+								<a href="javascript;">
+									<img src="images/product-4.jpg" alt="product-4" class="lazyload">
+								</a>
+							</div>
+							<div class="details">
+								<div class="prdt-category d-flex align-items-center justify-content-between">
+									<h2><a href="javascript:;">Dessert</a> </h2>
+									<div class="play-icon">
+										<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3.26 0.670001L7.59 5H0.0899999C0.243044 4.08067 0.609555 3.21004 1.1601 2.45804C1.71063 1.70604 2.42986 1.09363 3.26 0.670001ZM9.08 4.72357e-07H6C5.81 4.72357e-07 5.62 0.0100005 5.43 0.0200005L10.41 5H14.08L9.08 4.72357e-07ZM16 4.72357e-07H11.92L16.92 5H21.91C21.6757 3.60207 20.9533 2.33251 19.8712 1.41702C18.7891 0.501533 17.4174 -0.000562172 16 4.72357e-07ZM9.4819 16.626L14.4819 13.876C14.6389 13.7899 14.7699 13.6631 14.8611 13.509C14.9523 13.3549 15.0005 13.1791 15.0005 13C15.0005 12.8209 14.9523 12.6451 14.8611 12.491C14.7699 12.3369 14.6389 12.2101 14.4819 12.124L9.4819 9.374C9.32965 9.29027 9.15821 9.24765 8.98447 9.25035C8.81074 9.25305 8.64071 9.30096 8.49113 9.38938C8.34155 9.4778 8.21759 9.60367 8.13147 9.75458C8.04535 9.9055 8.00004 10.0762 8 10.25V15.75C8.00004 15.9238 8.04535 16.0945 8.13147 16.2454C8.21759 16.3963 8.34155 16.5222 8.49113 16.6106C8.64071 16.699 8.81074 16.747 8.98447 16.7497C9.15821 16.7523 9.32965 16.7097 9.4819 16.626ZM22 7V16C21.9987 17.5909 21.3662 19.1163 20.2412 20.2412C19.1163 21.3662 17.5909 21.9987 16 22H6C4.40909 21.9987 2.88371 21.3662 1.75876 20.2412C0.633821 19.1163 0.0012712 17.5909 0 16V7H22Z" fill="#A5396B"/>
+										</svg>
+									</div>
+								</div>
+								<div class="color-list">
+									<div class="item bg-darkpink">LV</div>
+									<div class="item bg-lightpink">EG</div>
+									<div class="item bg-green">NF</div>
+									<div class="item bg-orange">VG</div>
+									<div class="item bg-lightpink-heavy">DF</div>
+								</div>
+								<h3><a href="javascript:;">Lorem Ipsum is simply dummy text</a></h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product-service">
+					<div class="image-box">
+						<img src="images/desi_bakes_texture.jpg" alt="desi_bakes_texture" class="lazyload" />
+					</div>
+					<div class="details">
+						<h1>Desi Bakes is out!</h1>
+						<h3>Get your copy today!</h3>
+						<p>85 Recipes Bringing the Best of Indian Flavors to Western-Style Desserts</p>
+						<div class="buttons">
+							<a href="javascript:;" class="btn-custom">Lorem Ipsum </a>
+						</div>
+					</div>
+				</div>
+				<div class="subscribe-substack">					
+					<p>Become a part of Cardamom Crew <br />Where food, travel, and delicious recipes come to your inbox!</p>
+					<div class="buttons">
+						<a href="javascript:;" class="btn-custom">Subscribe to Substack </a>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="searchbox-section bg-lightpink text-center">
+			<div class="custom-container">
+				<h2>Feeling hungry? Search for whatever your heart desires!</h2>
+				<h3>I’M IN THE MOOD FOR..</h3>
+				<div class="search-form">
+					<form>
+						<div class="form-data">
+							<input type="search" placeholder="search here" id="searchdata" class="input-search" />
+							<button type="submit" class="btn-custom">search!</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+		<section class="category-list-section">
+			<div class="custom-container">
+				<div class="category-list">
+					<div class="item">
+						<a href="javascript:;" class="bg-orange">Desserts</a>
+					</div>
+					<div class="item">
+						<a href="javascript:;" class="bg-green">Breakfast</a>
+					</div>
+					<div class="item">
+						<a href="javascript:;" class="bg-darkpink">Main Dish</a>
+					</div>
+					<div class="item">
+						<a href="javascript:;" class="bg-lightpink-heavy">Lunch</a>
+					</div>
+					<div class="item">
+						<a href="javascript:;" class="bg-lightpink-heavy">Snacks and Sides</a>
+					</div>
+					<div class="item">
+						<a href="javascript:;" class="bg-orange">Drinks</a>
+					</div>
+					<div class="item">
+						<a href="javascript:;" class="bg-green">Tarts & Pies</a>
+					</div>
+					<div class="item">
+						<a href="javascript:;" class="bg-orange">Cakes</a>
+					</div>
+					<div class="item">
+						<a href="javascript:;" class="bg-darkpink">Cookies, Brownies, Bars</a>
+					</div>
+					<div class="item">
+						<a href="javascript:;" class="bg-sky">Indian Inspired Desserts</a>
+					</div>
+					<div class="item">
+						<a href="javascript:;" class="bg-orange">Eggless Desserts</a>
+					</div>
+					<div class="item">
+						<a href="javascript:;" class="bg-green">Tricks & Tips</a>
+					</div>
+				</div>
+				<div class="buttons text-center">
+					<a href="javascript:;">
+						<span>Take me to all recipes</span> 
+						<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M30.5612 14.6536V16.3049H0.652344V14.6536H30.5612Z" fill="black"/>
+							<path d="M25.0917 22.2298L23.9688 21.0276L29.9267 15.4791L23.9688 9.94389L25.0917 8.72852L32.3575 15.4791L25.0917 22.2298Z" fill="black"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</section>
+		<section class="holi-creation">
+			<div class="left-box box">
+				<img src="images/view-holi-collection-left.jpg " alt="view-holi-collection-left" class="lazyload" />
+				<div class="content">
+					<h2>Lorem Ipusm</h2>
+					<p>Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure </p>
+				</div>
+			</div>
+			<div class="right-box box">
+				<div class="border-pattern">
+					<div class="pattern-top"></div>
+					<div class="pattern-bottom"></div>
+					<div class="pattern-right"></div>
+				</div>
+				<div class="list">
+					<div class="item">
+						<div class="title"><a href="javascript:;">Lorem Ipsum</a></div>
+						<div class="list-box">
+							<div class="image-box">							
+								<img src="images/view-holi-collection-right.jpg " alt="view-holi-collection-right" class="lazyload" />
+							</div>
+							<div class="content">
+								<h2>Lorem Ipsum Lorem</h2>
+								<p>Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure </p>
+								<div class="arrow">
+									<div class="line"></div>
+									<svg width="33" height="16" viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M32.7071 8.70711C33.0976 8.31658 33.0976 7.68342 32.7071 7.29289L26.3431 0.928932C25.9526 0.538408 25.3195 0.538408 24.9289 0.928932C24.5384 1.31946 24.5384 1.95262 24.9289 2.34315L30.5858 8L24.9289 13.6569C24.5384 14.0474 24.5384 14.6805 24.9289 15.0711C25.3195 15.4616 25.9526 15.4616 26.3431 15.0711L32.7071 8.70711ZM0 9H32V7H0V9Z" fill="black"/>
+									</svg>
+								</div>
+							</div>
+						</div>						
+					</div>
+					<div class="item">
+						<div class="title"><a href="javascript:;">Lorem Ipsum</a></div>
+						<div class="list-box">
+							<div class="image-box">							
+								<img src="images/view-holi-collection-right.jpg " alt="view-holi-collection-right" class="lazyload" />
+							</div>
+							<div class="content">
+								<h2>Lorem Ipsum Lorem</h2>
+								<p>Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure </p>
+								<div class="arrow">
+									<div class="line"></div>
+									<svg width="33" height="16" viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M32.7071 8.70711C33.0976 8.31658 33.0976 7.68342 32.7071 7.29289L26.3431 0.928932C25.9526 0.538408 25.3195 0.538408 24.9289 0.928932C24.5384 1.31946 24.5384 1.95262 24.9289 2.34315L30.5858 8L24.9289 13.6569C24.5384 14.0474 24.5384 14.6805 24.9289 15.0711C25.3195 15.4616 25.9526 15.4616 26.3431 15.0711L32.7071 8.70711ZM0 9H32V7H0V9Z" fill="black"/>
+									</svg>
+								</div>
+							</div>
+						</div>						
+					</div>
+				</div>
+				<div class="buttons text-center">
+					<a href="javascript:;">
+						<span>View Holi Collection</span> 
+						<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M30.5612 14.6536V16.3049H0.652344V14.6536H30.5612Z" fill="black"/>
+							<path d="M25.0917 22.2298L23.9688 21.0276L29.9267 15.4791L23.9688 9.94389L25.0917 8.72852L32.3575 15.4791L25.0917 22.2298Z" fill="black"/>
+						</svg>
+					</a>
+				</div>			
+			</div>
+		</section>
+		<section class="feeling-savory">
+			<div class="custom-container-small">
+				<div class="sec-heading">
+					<h2 class="big-heading-2">Feeling Savory?</h2>
+					<div class="more-place">
+						<a href="javascript:;" class="arrow-button">
+							<span>MORE PLEASE</span> 
+							<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M30.5612 14.6536V16.3049H0.652344V14.6536H30.5612Z" fill="black"/>
+								<path d="M25.0917 22.2298L23.9688 21.0276L29.9267 15.4791L23.9688 9.94389L25.0917 8.72852L32.3575 15.4791L25.0917 22.2298Z" fill="black"/>
+							</svg>
+						</a>
+					</div>
+				</div>				
+				<div class="product-box-list">
+					<div class="item">
+						<div class="prdt-box">
+							<div class="image-box">
+								<a href="javascript;">
+									<img src="images/product-5.jpg" alt="product-5" class="lazyload">
+								</a>
+							</div>
+							<div class="details">
+								<div class="prdt-category d-flex align-items-center justify-content-between">
+									<h2><a href="javascript:;">Dessert</a> </h2>
+									<div class="play-icon">
+										<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3.26 0.670001L7.59 5H0.0899999C0.243044 4.08067 0.609555 3.21004 1.1601 2.45804C1.71063 1.70604 2.42986 1.09363 3.26 0.670001ZM9.08 4.72357e-07H6C5.81 4.72357e-07 5.62 0.0100005 5.43 0.0200005L10.41 5H14.08L9.08 4.72357e-07ZM16 4.72357e-07H11.92L16.92 5H21.91C21.6757 3.60207 20.9533 2.33251 19.8712 1.41702C18.7891 0.501533 17.4174 -0.000562172 16 4.72357e-07ZM9.4819 16.626L14.4819 13.876C14.6389 13.7899 14.7699 13.6631 14.8611 13.509C14.9523 13.3549 15.0005 13.1791 15.0005 13C15.0005 12.8209 14.9523 12.6451 14.8611 12.491C14.7699 12.3369 14.6389 12.2101 14.4819 12.124L9.4819 9.374C9.32965 9.29027 9.15821 9.24765 8.98447 9.25035C8.81074 9.25305 8.64071 9.30096 8.49113 9.38938C8.34155 9.4778 8.21759 9.60367 8.13147 9.75458C8.04535 9.9055 8.00004 10.0762 8 10.25V15.75C8.00004 15.9238 8.04535 16.0945 8.13147 16.2454C8.21759 16.3963 8.34155 16.5222 8.49113 16.6106C8.64071 16.699 8.81074 16.747 8.98447 16.7497C9.15821 16.7523 9.32965 16.7097 9.4819 16.626ZM22 7V16C21.9987 17.5909 21.3662 19.1163 20.2412 20.2412C19.1163 21.3662 17.5909 21.9987 16 22H6C4.40909 21.9987 2.88371 21.3662 1.75876 20.2412C0.633821 19.1163 0.0012712 17.5909 0 16V7H22Z" fill="#A5396B"/>
+										</svg>
+									</div>
+								</div>
+								<div class="color-list">
+									<div class="item bg-darkpink">LV</div>
+									<div class="item bg-lightpink">EG</div>
+									<div class="item bg-green">NF</div>
+									<div class="item bg-orange">VG</div>
+									<div class="item bg-lightpink-heavy">DF</div>
+								</div>
+								<h3><a href="javascript:;">Three Simple Indian Chutneys</a></h3>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="prdt-box">
+							<div class="image-box">
+								<a href="javascript;">
+									<img src="images/product-6.jpg" alt="product-6" class="lazyload">
+								</a>
+							</div>
+							<div class="details">
+								<div class="prdt-category d-flex align-items-center justify-content-between">
+									<h2><a href="javascript:;">Dessert</a> </h2>
+									<div class="play-icon">
+										<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3.26 0.670001L7.59 5H0.0899999C0.243044 4.08067 0.609555 3.21004 1.1601 2.45804C1.71063 1.70604 2.42986 1.09363 3.26 0.670001ZM9.08 4.72357e-07H6C5.81 4.72357e-07 5.62 0.0100005 5.43 0.0200005L10.41 5H14.08L9.08 4.72357e-07ZM16 4.72357e-07H11.92L16.92 5H21.91C21.6757 3.60207 20.9533 2.33251 19.8712 1.41702C18.7891 0.501533 17.4174 -0.000562172 16 4.72357e-07ZM9.4819 16.626L14.4819 13.876C14.6389 13.7899 14.7699 13.6631 14.8611 13.509C14.9523 13.3549 15.0005 13.1791 15.0005 13C15.0005 12.8209 14.9523 12.6451 14.8611 12.491C14.7699 12.3369 14.6389 12.2101 14.4819 12.124L9.4819 9.374C9.32965 9.29027 9.15821 9.24765 8.98447 9.25035C8.81074 9.25305 8.64071 9.30096 8.49113 9.38938C8.34155 9.4778 8.21759 9.60367 8.13147 9.75458C8.04535 9.9055 8.00004 10.0762 8 10.25V15.75C8.00004 15.9238 8.04535 16.0945 8.13147 16.2454C8.21759 16.3963 8.34155 16.5222 8.49113 16.6106C8.64071 16.699 8.81074 16.747 8.98447 16.7497C9.15821 16.7523 9.32965 16.7097 9.4819 16.626ZM22 7V16C21.9987 17.5909 21.3662 19.1163 20.2412 20.2412C19.1163 21.3662 17.5909 21.9987 16 22H6C4.40909 21.9987 2.88371 21.3662 1.75876 20.2412C0.633821 19.1163 0.0012712 17.5909 0 16V7H22Z" fill="#A5396B"/>
+										</svg>
+									</div>
+								</div>
+								<div class="color-list">
+									<div class="item bg-darkpink">LV</div>
+									<div class="item bg-lightpink">EG</div>
+									<div class="item bg-green">NF</div>
+									<div class="item bg-orange">VG</div>
+									<div class="item bg-lightpink-heavy">DF</div>
+								</div>
+								<h3><a href="javascript:;">Tacos Dorados de Aloo </a></h3>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="prdt-box">
+							<div class="image-box">
+								<a href="javascript;">
+									<img src="images/product-7.jpg" alt="product-7" class="lazyload">
+								</a>
+							</div>
+							<div class="details">
+								<div class="prdt-category d-flex align-items-center justify-content-between">
+									<h2><a href="javascript:;">Dessert</a> </h2>
+									<div class="play-icon">
+										<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3.26 0.670001L7.59 5H0.0899999C0.243044 4.08067 0.609555 3.21004 1.1601 2.45804C1.71063 1.70604 2.42986 1.09363 3.26 0.670001ZM9.08 4.72357e-07H6C5.81 4.72357e-07 5.62 0.0100005 5.43 0.0200005L10.41 5H14.08L9.08 4.72357e-07ZM16 4.72357e-07H11.92L16.92 5H21.91C21.6757 3.60207 20.9533 2.33251 19.8712 1.41702C18.7891 0.501533 17.4174 -0.000562172 16 4.72357e-07ZM9.4819 16.626L14.4819 13.876C14.6389 13.7899 14.7699 13.6631 14.8611 13.509C14.9523 13.3549 15.0005 13.1791 15.0005 13C15.0005 12.8209 14.9523 12.6451 14.8611 12.491C14.7699 12.3369 14.6389 12.2101 14.4819 12.124L9.4819 9.374C9.32965 9.29027 9.15821 9.24765 8.98447 9.25035C8.81074 9.25305 8.64071 9.30096 8.49113 9.38938C8.34155 9.4778 8.21759 9.60367 8.13147 9.75458C8.04535 9.9055 8.00004 10.0762 8 10.25V15.75C8.00004 15.9238 8.04535 16.0945 8.13147 16.2454C8.21759 16.3963 8.34155 16.5222 8.49113 16.6106C8.64071 16.699 8.81074 16.747 8.98447 16.7497C9.15821 16.7523 9.32965 16.7097 9.4819 16.626ZM22 7V16C21.9987 17.5909 21.3662 19.1163 20.2412 20.2412C19.1163 21.3662 17.5909 21.9987 16 22H6C4.40909 21.9987 2.88371 21.3662 1.75876 20.2412C0.633821 19.1163 0.0012712 17.5909 0 16V7H22Z" fill="#A5396B"/>
+										</svg>
+									</div>
+								</div>
+								<div class="color-list">
+									<div class="item bg-darkpink">LV</div>
+									<div class="item bg-lightpink">EG</div>
+									<div class="item bg-green">NF</div>
+									<div class="item bg-orange">VG</div>
+									<div class="item bg-lightpink-heavy">DF</div>
+								</div>
+								<h3><a href="javascript:;">The Best Pani Puri Water</a></h3>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="prdt-box">
+							<div class="image-box">
+								<a href="javascript;">
+									<img src="images/product-8.jpg" alt="product-8" class="lazyload">
+								</a>
+							</div>
+							<div class="details">
+								<div class="prdt-category d-flex align-items-center justify-content-between">
+									<h2><a href="javascript:;">Dessert</a> </h2>
+									<div class="play-icon">
+										<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3.26 0.670001L7.59 5H0.0899999C0.243044 4.08067 0.609555 3.21004 1.1601 2.45804C1.71063 1.70604 2.42986 1.09363 3.26 0.670001ZM9.08 4.72357e-07H6C5.81 4.72357e-07 5.62 0.0100005 5.43 0.0200005L10.41 5H14.08L9.08 4.72357e-07ZM16 4.72357e-07H11.92L16.92 5H21.91C21.6757 3.60207 20.9533 2.33251 19.8712 1.41702C18.7891 0.501533 17.4174 -0.000562172 16 4.72357e-07ZM9.4819 16.626L14.4819 13.876C14.6389 13.7899 14.7699 13.6631 14.8611 13.509C14.9523 13.3549 15.0005 13.1791 15.0005 13C15.0005 12.8209 14.9523 12.6451 14.8611 12.491C14.7699 12.3369 14.6389 12.2101 14.4819 12.124L9.4819 9.374C9.32965 9.29027 9.15821 9.24765 8.98447 9.25035C8.81074 9.25305 8.64071 9.30096 8.49113 9.38938C8.34155 9.4778 8.21759 9.60367 8.13147 9.75458C8.04535 9.9055 8.00004 10.0762 8 10.25V15.75C8.00004 15.9238 8.04535 16.0945 8.13147 16.2454C8.21759 16.3963 8.34155 16.5222 8.49113 16.6106C8.64071 16.699 8.81074 16.747 8.98447 16.7497C9.15821 16.7523 9.32965 16.7097 9.4819 16.626ZM22 7V16C21.9987 17.5909 21.3662 19.1163 20.2412 20.2412C19.1163 21.3662 17.5909 21.9987 16 22H6C4.40909 21.9987 2.88371 21.3662 1.75876 20.2412C0.633821 19.1163 0.0012712 17.5909 0 16V7H22Z" fill="#A5396B"/>
+										</svg>
+									</div>
+								</div>
+								<div class="color-list">
+									<div class="item bg-darkpink">LV</div>
+									<div class="item bg-lightpink">EG</div>
+									<div class="item bg-green">NF</div>
+									<div class="item bg-orange">VG</div>
+									<div class="item bg-lightpink-heavy">DF</div>
+								</div>
+								<h3><a href="javascript:;">Skillet Veggie Lasagna</a></h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script src="js/jquery.min.js" defer></script>
+		<script src="js/plugins.js" defer></script>
+		<script src="js/custom.js" defer></script>
+	</body>
+</html>

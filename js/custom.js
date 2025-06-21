@@ -20,19 +20,13 @@ $(window).scroll(function(event){
 	}		
 	lastScrollTop = st;
 });
-
-
-
-
-$(document).ready(function () {
-	
+$(document).ready(function () {	
 	$('.menu-icon').click(function () {
 		$('body').toggleClass('showSidebar');
 	});
 	$('.btn-close-sidebar,.sidebar-menu ul li a').click(function (event) {
 		$('body').removeClass('showSidebar');
 	});
-
 	$('.custom-tab').click(function(){  
       $(".tab").removeClass('tab-active');
       $(".tab[data-id='"+$(this).attr('data-id')+"']").addClass("tab-active");
@@ -115,7 +109,7 @@ $(document).ready(function () {
 	if ($('.instagram-slider').length > 0) {
 		$('.instagram-slider').slick({
 			speed: 1000,
-			//autoplay: true,
+			autoplay: true,
 			slidesToShow: 7,
 			slidesToScroll: 1,
 			arrows: false,
@@ -142,6 +136,24 @@ $(document).ready(function () {
 			]
 		});
 	}
+	if($('.recipe-filter').length > 0) {
+		$(".filter-title a").on("click", function(e){
+			e.preventDefault();
+			if($(this).parent().hasClass("active"))
+			{
+				$(this).parent().removeClass("active");
+				$(this).parent().parent().find(".filter-list").slideUp();
+			}
+			else
+			{
+				$(this).parent().addClass("active");
+				$(this).parent().parent().find(".filter-list").slideDown();
+			}
+		});
+	}
+
+
+
 	if ($('.banner-list').length > 0) {
 		$(document).on('mouseenter', '.banner-list .expertise h1 a', function () {
 			var subchildId = $(this).parent('.expertise h1').attr('data-subchild');

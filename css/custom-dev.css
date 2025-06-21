@@ -1,11 +1,6 @@
 
 @charset "UTF-8";
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Upright:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
 :root{
     --black:#000;
     --white:#fff;
@@ -39,8 +34,8 @@ img{display: block;}
 button:focus {outline: none; }
 h1, h2, h3, h4, h5, h6 {margin: 0; padding: 0;font-weight: normal;}
 ul, li, ol {margin: 0;padding: 0;list-style: none;color: var(--black); }
-.custom-container {max-width: 1575px;padding: 0 12px;margin: 0 auto;    width: 100%; } 
-.custom-container-small{max-width: 1400px;padding: 0 12px;margin: 0 auto;    width: 100%;}
+.custom-container {max-width: 1575px;padding: 0 12px;margin: 0 auto;    width: 100%;position: relative; } 
+.custom-container-small{max-width: 1400px;padding: 0 12px;margin: 0 auto;    width: 100%;position: relative;}
 .wrapper {width: 100%;position: relative; }
 .img-fluid {max-width: 100%;height: auto; }
 p {color: var(--pragraph);font-size: 15px;font-style: normal;font-weight: 400;line-height: 1.6; }
@@ -186,6 +181,106 @@ background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);max
 .feeling-savory .product-box-list{margin-top: 50px;}
 .more-place .arrow-button{text-align: right;text-transform: uppercase;margin-left: auto;}
 
+
+.about-hetal .about-info{position: relative;padding: 50px 160px 104px;}
+.about-hetal .about-info::before{content: "";background-color: #A0C9A3;width: 82%;height: 100%;position: absolute;top: 0;left: 0;z-index: -1;}
+.about-hetal .about-info h2{font-family: var(--heading-font);font-style: normal;font-weight: 600;font-size: 60px;line-height: 0.84;color: #000000;}
+.about-hetal .about-info h2 span{font-family: var(--heading-font-roman);font-weight: 400;font-size: 120px;line-height: 1.25;margin-right: 20px;}
+.about-hetal .about-info p{font-weight: 400;font-size: 26.23px;line-height: 1.45;color: #2A2B2A;max-width: 721px;margin: 0;}
+.about-hetal .about-info .buttons{display: flex;align-items: center;margin-top: 54px;}
+.about-hetal .about-info .buttons a{font-weight: 600;font-size: 27.0487px;line-height: 1.18;color: var(--white);min-width: 208px;text-align: center;padding: 12px 10px 14px;border-radius: 50px;}
+.about-hetal .about-info .buttons a + a{margin-left: 32px;}
+.about-hetal .circle-heatal-photo{position: absolute;right: 0;top: 0;}
+.about-hetal .circle-heatal-photo img{width: 600px;aspect-ratio: 100/100;object-fit: cover;object-position: center center;}
+
+.video-section{padding: 78px 0;border-bottom: 1px solid #D9D9D9;}
+.video-section .heading{position: relative;}
+.video-section .heading::before{content: "";height: 1px;background-color: #C4C4C4;width: 100%;position: absolute;top:50%;transform: translateY(-50%);z-index:-1;}
+.video-section .heading h2{font-style: normal;font-weight: 600;font-size: 60px;line-height: 0.84;color: var(--dark-pink);max-width: max-content;background-color: var(--white);text-transform: uppercase;font-family: var(--heading-font);    margin: 0 auto;padding: 0 15px;}
+.video-section .heading h2 span{font-family: var(--heading-font-roman);font-weight: 400;font-size: 120px;line-height: 1.25;margin-left: 20px;text-transform: none;color: var(--black);}
+.tab-heading {display: flex;align-items: center;}
+.tab-heading .item{width:100%;text-align: center;}
+.tab-heading .item a{font-family: var(--heading-font-roman);font-style: normal;font-weight: 400;font-size: 60px;line-height: 1.25;text-align: center;color: var(--black);position: relative;}
+.tab-heading .item a::after{content: "";position: absolute;width: 100%;height: 9px;left: 0;bottom: 14px;background: #D9D9D9;z-index: -1;}
+.video-list{margin: 0 -12px;margin-top: 50px; display: flex;flex-wrap: wrap;}
+.video-list .item{padding: 12px;width: 25%;}
+.video-list .video-box{position: relative;}
+.video-list .video-box .play-icon{position: absolute;left: 0; right: 0;margin: 0 auto;top:50%;transform: translateY(-50%);text-align: center;}
+.video-list .video-box a{display: block;overflow: hidden;}
+.video-list .video-box a img{display: block;width: 100%;aspect-ratio: 100 / 150;object-fit: cover;object-position: center center;transition: 0.5s;transform-origin: center center;}
+.video-list .video-box:hover a img{transform: scale(1.2);}
+.video-list .video-box:hover a svg path{fill: var(--dark-pink);}
+.all-video-link{display: flex;margin-top: 30px;background-color: var(--white);flex-wrap: wrap;}
+.all-video-link .item{width: 50%;display: flex;align-items: center;justify-content: space-between;padding: 0 12px;}
+.all-video-link .item > div{font-weight: 400;font-size: 26.23px;line-height: 1.45;color: #2A2B2A;}
+.all-video-link .item a{color: inherit;}
+.all-video-link .item .videos_list{text-transform: uppercase;}
+.all-video-id{position: relative;}
+.all-video-id::after{content: "";height: 1px;background-color: #C4C4C4;width: 100%;position: absolute;top: 50%;transform: translateY(-50%);z-index: -1;}
+
+.latest-milk-cardamom{padding: 100px 0;}
+.latest-milk-cardamom .heading h2{font-family: var(--heading-font);font-weight: 600;font-size: 60px;line-height: 0.84;color: var(--dark-pink);text-transform: uppercase;text-align: center;}
+
+.tab-menu{margin:40px 0 30px;}
+.tab-menu ul{padding: 0;display: flex;flex-wrap: wrap;margin: 0 -12px;}
+.tab-menu ul li{padding: 12px;width: 25%;}
+.tab-menu ul li a{display: block;font-family: var(--heading-font);font-weight: 600;font-size: 27.4781px;line-height: 1.16;color: var(--black);padding: 12px 12px 14px;border:3px solid #546486;text-align: center;text-transform: uppercase;}
+
+.tab-menu ul li a.active{background-color:var(--dark-pink);color: var(--white);border-color: var(--dark-pink);}
+.custom-tabing .tab{display: none;}
+.custom-tabing .tab-active{display: block;}
+.home-travel{overflow: hidden;}
+.home-travel .heading{display: flex;align-items: flex-end;justify-content: space-between;padding: 0 80px;}
+.home-travel .heading h2{font-family: var(--heading-font);font-style: normal;font-weight: 600;font-size: 88.2503px;line-height: 0.93;color: var(--dark-pink);text-transform: uppercase;}
+.home-travel .heading h2 span{display: block;color: var(--black);}
+.home-travel .heading p{font-weight: 500;font-size: 26.2251px;line-height: 1.27;color: #212121;}
+
+.home-travel-slider .item{padding: 10px;}
+.home-travel-slider{overflow: hidden;margin-left: -10px;margin-right: -10px;margin-top: 25px;}
+.travel-slider-box .video-box{position: relative;}
+.travel-slider-box .video-box img{width: 100%;aspect-ratio: 100/150;object-fit: cover;object-position: center center;}
+.travel-slider-box .video-box .play-icon{position: absolute;left: 0; right: 0;margin: 0 auto;top:50%;transform: translateY(-50%);text-align: center;}
+.travel-slider-box .video-box .details{position: absolute;right: 15px;bottom: 15px;}
+.travel-slider-box .video-box .details a{font-weight: 700;font-size: 23.0019px;line-height: 1.27;letter-spacing: 0.608316px;text-transform: uppercase;color: var(--white);text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.25);}
+.travel-slider-box .content{padding: 15px;text-align: center;}
+.travel-slider-box .content h3,
+.travel-slider-box .content h5{font-weight: 500;font-size: 21.9724px;line-height: 1.27;color: #212121;}
+.travel-slider-box .content h4{font-weight: 500;font-size: 33px;line-height: 0.84;color: #212121;font-family: var(--heading-font);text-transform: uppercase;margin: 10px 0;}
+.travel-slider-box .content a{color: inherit;}
+
+.client-logo{padding: 45px 0;}
+.client-logo h2{font-family: var(--heading-font);font-weight: 700;font-size: 40px;line-height: 1;text-transform: uppercase;color: var(--dark-pink);text-align: center;}
+.client-logo-list{display: flex;align-items: center;justify-content: space-between;}
+.client-logo-list .item{padding: 0 10px;text-align: center;position: relative;}
+.client-logo-list .slick-track{display: flex;align-items: center;}
+
+.footer-top-section{background-color: var(--dark-pink);padding: 73px 0;}
+.footer-top{display: flex;justify-content: space-between;align-items: center;flex-wrap: wrap;}
+.footer-top-section .logo a img{height: 40px;width: auto;}
+.footer-top-section .buttons{display: flex;align-items: center;margin: 40px 0;}
+.footer-top-section .buttons a{background-color: var(--white);color: var(--dark-pink);width: 100%;text-align: center;font-size: 16px;padding: 15px;}
+.footer-top-section .buttons a + a{margin-left: 15px;} 
+.social-media-copyright{display: flex;align-items: center;}
+.social-media-copyright .social-media a{margin: 0 16px 0 0;}
+.social-media-copyright p{font-weight: 400;font-size: 15.25px;line-height: 1.5;color: var(--white);}
+.footer-top-right{width: 51.6%;}
+.footer-top-left{width: 37%;}
+.footer-search{position: relative;width: 100%;}
+.footer-search input{width: 100%;background-color: var(--white);height: 52px;font-weight: 400;font-size: 18px;color: #1F1F1F;padding: 0 50px 0 25px;font-family: var(--primary-font);border:0;}
+.footer-search .btn-search-icon{position: absolute;top:50%;transform: translateY(-50%);right: 0;width: 52px;height: 52px;background-color: transparent;border:0;padding: 0;}
+.recipe-key{background-color: var(--white);padding: 44px 30px 30px;margin-top: 40px;}
+.recipe-key h3{font-weight: 700;font-size: 22px;line-height: 1.2;text-align: center;text-transform: uppercase;color: #212121;}
+.recipe-key-list {display: flex;margin-top: 30px;}
+.recipe-key-list .item{display: flex;align-items: center;}
+.recipe-key-list .item + .item{margin-left: 15px;}
+.recipe-key-list .item p{font-weight: 400;font-size: 14px;line-height: 1.29;letter-spacing: 0.56px;color: #2A2B2A;margin: 0;}
+.cat-circle{min-width: 32px; width: 32px;height: 32px;border-radius: 100%;display: flex;align-items: center;justify-content: center;font-weight: 700;font-size: 14px;text-align: center;letter-spacing: 0.49px;color: var(--white);}
+.recipe-key-list .item .cat-circle{margin-right: 10px;}
+.instagram-slider .item {position: relative;}
+.instagram-slider .item a{display: block;border:2px solid var(--white);position: relative;}
+.instagram-slider .item a img{display: block;width: 100%;aspect-ratio: 100/100;object-position: center center;object-fit: cover;}
+.instagram-slider .item .play-icon{position: absolute;left: 0; right: 0;margin: 0 auto;top:50%;transform: translateY(-50%);text-align: center;}
+
 @media only screen and (min-width: 1200px) and (max-width: 1599px){
     .custom-container{max-width: 1170px;}
     .header-top {padding: 25px 0;}
@@ -237,6 +332,28 @@ background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);max
     .arrow-button svg{margin-left: 14px;}
     .feeling-savory{padding: 100px 0;}
     .feeling-savory .product-box-list{margin-top: 40px;}
+
+    .about-hetal .about-info{padding: 45px 50px;}
+    .about-hetal .circle-heatal-photo img{width: 430px;}
+    .about-hetal .about-info h2 span{font-size: 90px;}
+    .about-hetal .about-info h2{font-size: 48px;}
+    .about-hetal .about-info p {max-width: 665px;font-size: 20px;}
+    .video-section .heading h2{font-size: 48px;}
+    .video-section .heading h2 span{font-size: 90px;}
+    .latest-milk-cardamom .heading h2{font-size: 48px;}
+    .tab-menu ul li a{font-size: 24px;}
+
+    .home-travel .heading h2 {font-size: 48px;}
+    .home-travel .heading{padding: 0 30px;}
+    .home-travel .heading p{font-size: 20px;}
+    .travel-slider-box .video-box .details a{font-size: 20px;} 
+    .travel-slider-box .content h3, .travel-slider-box .content h5{font-size: 20px;}
+    .travel-slider-box .content h4{font-size: 30px;}
+    .travel-slider-box .content{padding: 15px 10px;}
+
+    .client-logo h2{font-size: 36px;}
+    .footer-top-left {width: 46%;}
+    .footer-top-section .logo a img {height: 38px;}
 
 }
 
@@ -303,6 +420,48 @@ background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);max
     .feeling-savory{padding: 100px 0;}
     .feeling-savory .product-box-list{margin-top: 40px;}
 
+    .about-hetal .circle-heatal-photo img{max-width: 380px;}
+    .about-hetal .about-info{ padding: 10px 312px 40px 25px;}
+    .about-hetal .about-info h2{font-size: 40px;}
+    .about-hetal .about-info h2 span{font-size: 90px;}
+    .about-hetal .about-info p{font-size: 20px;max-width: 530px;}
+    .about-hetal .about-info .buttons{margin-top: 25px;}
+    .about-hetal .about-info .buttons a + a{margin: 0 0 0 18px ;}
+    .about-hetal .about-info .buttons a{font-size: 24px;min-width: 180px;padding: 9px 10px 10px;}
+
+    .video-section{padding: 60px 0;}
+    .video-section .heading h2{font-size: 40px;    padding: 0 5px;}
+    .video-section .heading h2 span{font-size: 60px;margin: 10px;}
+    .tab-heading .item a{font-size: 40px;}
+    .tab-heading .item a::after{bottom: 9px;height: 4px;}
+    .video-list{margin-top: 25px;}
+    .video-list .video-box .play-icon svg{width: 60px;height: 60px;}
+    .all-video-link .item > div{font-size: 20px;}
+    .latest-milk-cardamom .heading h2{font-size: 40px;line-height: 1.25;}
+    .tab-menu{margin: 20px 0 15px;}
+    .tab-menu ul li a{font-size: 20px;}
+    .latest-milk-cardamom{padding: 50px 0;}
+
+    .home-travel .heading h2 {font-size: 40px;}
+    .home-travel .heading{padding: 0 20px;}
+    .home-travel .heading p{font-size: 18px;}
+    .travel-slider-box .video-box .play-icon svg{width: 60px;height: 60px;}
+    .travel-slider-box .video-box .details{right: 10px;bottom: 7px;}
+    .travel-slider-box .video-box .details a{font-size: 16px;} 
+    .travel-slider-box .content{padding: 10px;}
+    .travel-slider-box .content h3, .travel-slider-box .content h5{font-size: 16px;}
+    .travel-slider-box .content h4{font-size: 24px;}
+    .client-logo h2{font-size: 30px;}
+
+    .footer-top-section{padding: 65px 0;}
+    .footer-top-left{width: 100%;}
+    .footer-top-section .logo a img{height: 30px;margin: 0 auto;}
+    .social-media-copyright{justify-content: center;text-align: center;}
+    .footer-top-right{width: 100%;}
+    .footer-search input{font-size: 18px;height: 48px;}
+    .recipe-key h3{font-size: 20px;}
+    .recipe-key-list{justify-content: center;}
+    .instagram-slider .item .play-icon svg{width: 60px;height: 60px;}
 
 }
 
@@ -377,11 +536,51 @@ background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);max
     .feeling-savory .sec-heading h2{font-size: 36px;}
     .arrow-button{font-size: 16px;}
     .arrow-button svg{margin-left: 8px;}
-    .feeling-savory{padding: 75px 0;}
+    .feeling-savory{padding: 50px 0;}
     .feeling-savory .product-box-list{margin-top: 25px;}
 
+    .about-hetal .circle-heatal-photo img{max-width: 300px;}
+    .about-hetal .about-info{ padding: 25px 300px 25px 25px;}
+    .about-hetal .about-info h2{font-size: 40px;}
+    .about-hetal .about-info h2 span{font-size: 90px;}
+    .about-hetal .about-info p{font-size: 18px;}
+    .about-hetal .about-info .buttons a + a{margin: 0 0 0 18px ;}
+    .about-hetal .about-info .buttons a{font-size: 22px;min-width: 150px;padding: 9px 10px 10px;}
 
+    .video-section{padding: 60px 0;}
+    .video-section .heading h2{font-size: 36px;    padding: 0 5px;}
+    .video-section .heading h2 span{font-size: 60px;margin: 10px;}
+    .tab-heading .item a{font-size: 36px;}
+    .tab-heading .item a::after{bottom: 9px;height: 4px;}
+    .video-list{margin-top: 25px;}
+    .video-list .video-box .play-icon svg{width: 44px;height: 44px;}
+    .all-video-link .item > div{font-size: 18px;}
+    .latest-milk-cardamom .heading h2{font-size: 40px;line-height: 1.25;}
+    .tab-menu{margin: 20px 0 15px;}
+    .tab-menu ul li a{font-size: 16px;padding: 8px;}
+    .latest-milk-cardamom{padding: 50px 0;}
 
+    .home-travel .heading h2 {font-size: 40px;}
+    .home-travel .heading{padding: 0 20px;}
+    .home-travel .heading p{font-size: 18px;}
+    .travel-slider-box .video-box .play-icon svg{width: 44px;height: 44px;}
+    .travel-slider-box .video-box .details{right: 10px;bottom: 7px;}
+    .travel-slider-box .video-box .details a{font-size: 16px;}
+    .travel-slider-box .content{padding: 7px;}
+    .travel-slider-box .content h3, .travel-slider-box .content h5{font-size: 16px;}
+    .travel-slider-box .content h4{font-size: 20px;margin: 5px 0;}
+    .client-logo h2{font-size: 25px;}
+
+    .footer-top-section{padding: 65px 0;}
+    .footer-top-left{width: 100%;}
+    .footer-top-section .logo a img{height: 25px;margin: 0 auto;}
+    .social-media-copyright{justify-content: center;text-align: center;}
+    .footer-top-right{width: 100%;}
+    .footer-search input{font-size: 16px;height: 48px;}
+    .recipe-key h3{font-size: 18px;}
+    .recipe-key{padding: 15px;}
+    .recipe-key-list{justify-content: center;}
+    .instagram-slider .item .play-icon svg{width: 44px;height: 44px;}
 
 }
 @media only screen and (min-width: 768px){
@@ -469,6 +668,66 @@ background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);max
     .arrow-button svg{margin-left: 8px;}
     .feeling-savory{padding: 75px 0;}
     .feeling-savory .product-box-list{margin-top: 25px;}
+    .about-hetal .circle-heatal-photo{position: relative;}
+    .about-hetal .circle-heatal-photo img{max-width: 300px;margin: 0 auto;}
+    .about-hetal .about-info{ padding: 150px 25px 63px;margin: -150px 0 0 0;}
+    .about-hetal .about-info::before{width: calc(100% + 24px);left: -12px;}
+    .about-hetal .about-info h2{font-size: 40px;}
+    .about-hetal .about-info h2 span{font-size: 90px;}
+    .about-hetal .about-info p{font-size: 18px;text-align: justify;}
+    .about-hetal .about-info .buttons{flex-direction: column;}
+    .about-hetal .about-info .buttons a + a{margin: 18px 0 0 0;}
+    .about-hetal .about-info .buttons a{font-size: 22px;min-width: 150px;padding: 9px 10px 10px;}
+
+    .video-section{padding: 60px 0;}
+    .video-section .heading h2{font-size: 30px;    padding: 0 5px;}
+    .video-section .heading h2 span{font-size: 53px;margin: 10px;}
+    .tab-heading .item a{font-size: 30px;}
+    .tab-heading .item a::after{bottom: 9px;height: 4px;}
+    .video-list{margin-top: 25px;}
+    .video-list .item{width: 50%;}
+    .video-list .video-box .play-icon svg{width: 44px;height: 44px;}
+    .all-video-link .item > div{font-size: 18px;}
+    .all-video-link .item{width: 100%;margin: 5px 0;}
+    .all-video-link .item:nth-child(even){flex-direction: row-reverse;}
+    .latest-milk-cardamom .heading h2{font-size: 40px;line-height: 1.25;}
+    .tab-menu ul{margin: 0 -8px;}
+    .tab-menu{margin: 20px 0 15px;}
+    .tab-menu ul li{width: 50%;padding: 8px;}
+    .tab-menu ul li a{font-size: 14px;padding: 6px;}
+    .latest-milk-cardamom{padding: 50px 0;}
+
+    .home-travel .heading h2 {font-size: 40px;}
+    .home-travel .heading{padding: 0 20px;flex-wrap: wrap;}
+    .home-travel .heading p{font-size: 18px;}
+    .home-travel-slider{display: flex;flex-wrap: wrap;        margin: 0;}
+    .home-travel-slider .item{width: 50%;}
+    .travel-slider-box .video-box .play-icon svg{width: 44px;height: 44px;}
+    .travel-slider-box .video-box .details{right: 10px;bottom: 7px;}
+    .travel-slider-box .video-box .details a{font-size: 10px;}
+    .travel-slider-box .content{padding: 7px;}
+    .travel-slider-box .content h3, .travel-slider-box .content h5{font-size: 10px;}
+    .travel-slider-box .content h4{font-size: 15px;margin: 5px 0;}
+    .client-logo h2{font-size: 25px;}
+
+    .footer-top-section{padding: 65px 0;}
+    .footer-top-left{width: 100%;}
+    .footer-top-section .logo{text-align: center;}
+    .footer-top-section .logo a img{height: 20px;margin: 0 auto;}
+    .footer-top-section .buttons{flex-wrap: wrap;justify-content: center;}
+    .footer-top-section .buttons a{font-size: 12px;width:220px;padding: 10px 16px;}
+    .footer-top-section .buttons a + a{margin: 15px 0 0 0;}
+    .social-media-copyright{flex-wrap: wrap;justify-content: center;text-align: center;}
+    .social-media-copyright p{width: 100%;}
+    .footer-top-right{width: 100%;}
+    .footer-search input{font-size: 14px;height: 40px;}
+    .recipe-key h3{font-size: 16px;}
+    .recipe-key{padding: 15px;}
+    .recipe-key-list{margin-top: 10px;flex-wrap: wrap;}
+    .recipe-key-list .item{width: 50%;margin: 6px 0 0 0;}
+    .recipe-key-list .item:first-child{width: 100%;}
+    .recipe-key-list .item + .item{margin: 6px 0 0 0;}
+    .instagram-slider .item .play-icon svg{width: 30px;height: 30px;}
 }
 
 @media only screen and (max-width: 575px){

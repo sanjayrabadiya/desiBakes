@@ -1,6 +1,18 @@
 
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Upright:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'Arabilla Signature';
+    src: url('../fonts/arabilla-signature-regular.woff2') format('woff2'),
+        url('../fonts/arabilla-signature-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 :root{
     --black:#000;
     --white:#fff;
@@ -412,6 +424,86 @@ background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);max
 .work-right ul li a{color: inherit;text-decoration: underline;}
 .work-right .box{z-index: 1;position: relative;}
 .work-right .box + .box{margin-top: 29px;}
+
+.cookbook-banner{padding: 123px 0;}
+.cookbook-banner .wrapper{background-color: #F4C7E0;padding: 85px;display: flex;flex-wrap: wrap;padding: 140px 90px 80px;}
+.cookbook-banner-left{width: 55%;margin-top: 40px;}
+.cookbook-banner-left .image-box{text-align: center;width: 63%;margin: 0 auto;position: relative;}
+.cookbook-banner-left .image-box > img{margin: 0 auto;width: 100%;aspect-ratio: 100/128;object-fit: cover;object-position: center center;}
+.cookbook-banner-left .image-box .top-right-icon{position: absolute;top: -118px;right: -33px;width: 180px;}
+.cookbook-banner-left .image-box .top-right-icon img{width: 100%;aspect-ratio: 100/100;object-fit: cover;object-position: center center;}
+.cookbook-banner-left .image-box .bottom-left-icon{position: absolute;bottom: -27px;right: 86%;width: 200px;}
+.cookbook-banner-left .image-box .bottom-left-icon img{width: 100%;aspect-ratio: 100/115;object-fit: cover;object-position: center center;}
+.cookbook-banner-right{width: 45%;}
+
+.cookbook-heading{text-align: center;}
+.cookbook-heading h2{font-family: var(--heading-font);font-weight: 400;font-size: 80px;line-height: 1.20;text-transform: uppercase;color: #3C1E21;position: relative;padding-bottom: 10px;}
+.cookbook-heading h2::after{content: "";background-image: url('../images/pattern-dark-pink.png');width: 190px;height: 8px;background-size: cover;object-position: center center;position: absolute;margin: 0 auto;bottom:0;left: 0;
+right: 0;}
+.cookbook-heading p{font-weight: 400;font-size: 19.25px;line-height: 1.45;color: #3C1E21;margin: 36px 0;}
+.tag-list{text-align: center;display: flex;align-items: center;flex-wrap: wrap;justify-content: center;}
+.tag-list .item{padding: 7px;}
+.tag-list a{display: inline-flex;font-weight: 400;font-size: 20px;line-height: 1.3;text-align: center;color: #A5396B;padding: 10px 21px;border:1px solid #Af396B;border-radius: 100px;}
+.tag-list a:hover{background-color: #A5396B;color:var(--white)}
+.cookbook-banner-right .tag-list{max-width: 576px;margin: 0 auto;}
+
+.cookbook-pink-content .wrapper{display: flex;justify-content: space-between; align-items: center;background-color: #A5396B;padding: 35px 50px;border-radius: 15px;}
+.cookbook-pink-content .content{position: relative;padding-left: 60px;}
+.cookbook-pink-content .content::before{content: "";background-image: url('../images/icon-small-olive.png');width: 50px;aspect-ratio: 100/100;background-size: cover;background-position: center center;position: absolute;left: 0;top: -10px;}
+.cookbook-pink-content .content p{margin: 0;font-style: italic;font-weight: 400;font-size: 22.5px;line-height: 1.6;color: var(--white);}
+.cookbook-pink-content .arrow{min-width:50px;}
+.cookbook-slider-section{padding: 88px 0;overflow: hidden;}
+.cookbook-slider-section .cookbook-heading{max-width: 800px;margin: 0 auto;}
+.cookbook-slider-section .cookbook-heading h2{padding-bottom: 34px;}
+.cookbook-slider-section .cookbook-heading h2::after{background-image: url('../images/pattern-orange.png');}
+.cookbook-slider-section .cookbook-heading p{margin: 48px 0;}
+
+.cookbook-slider .slick-list{overflow: visible;}
+.cookbook-slider .item{padding: 25px;}
+.cookbook-slider .box .image-box{position: relative;}
+.cookbook-slider .box .image-box img{width: 100%;aspect-ratio: 100/100;object-fit: cover;object-position: center center;border-radius: 15px;}
+.cookbook-slider .box h3{font-weight: 400;font-size: 14px;line-height: 1.79;text-align: center;color: #3C1E21;padding: 18px;width: 100%;}
+.cookbook-slider .box h3 a{color: inherit;}
+.cookbook-tag-section .tag-list{max-width: 960px;margin: 0 auto;padding: 83px 0;}
+.testimonial{padding: 50px 0;overflow: hidden;}
+.testimonial-slider{max-width: 1100px;    margin: 0 auto;}
+.testimonial-slider .slick-list{overflow: visible;}
+.testimonial-slider .item{position: relative;padding:0 70px;}
+.testimonial-slider .item .box{position: relative;background-color: #FFDBD1;padding:60px 95px ;text-align: center;}
+.testimonial-slider .item .icon{position: absolute;left: 20px;top: -45px;}
+.testimonial-slider .item h2{font-weight: 600;font-size: 22.8516px;line-height: 1.58;color: #3C1E21;}
+.testimonial-slider .item .content{margin: 30px 0 0 0;}
+.testimonial-slider .item .content p{margin: 0;font-weight: 400;font-size: 24px;line-height: 36px;color: #3C1E21;}
+.testimonial-slider .item .content p + p{margin: 0 0 15px 0;}
+.testimonial-slider .item .review-name-post{margin-top: 75px;}
+.testimonial-slider .item .review-name-post h4{font-weight: 600;font-size: 12.9062px;line-height: 1.39;letter-spacing: 1.4px;text-transform: uppercase;color: #3C1E21;}
+.testimonial-slider .item .review-name-post p{font-weight: 400;font-size: 14.125px;line-height: 1.77;color: #3C1E21;}
+.testimonial-slider .item.pink .box{background-color: #FFC8E6;}
+.testimonial-slider .item.pink svg path{fill:#A5396B;}
+.testimonial-slider .item.sky .box{background-color: #A2DCF7;}
+.testimonial-slider .item.sky svg path{fill:#4a8dac;}
+.slick-arrow{background-color: transparent;border: 0;padding: 0;width: 50px;aspect-ratio: 100/100;position: absolute;top:50%;transform: translateY(-50%);}
+.slick-arrow img{padding: 15px 0;}
+.slick-arrow.slick-next{right: 0;}
+
+.meet-author{padding: 90px 0 0 0;}
+.meet-author .custom-container{max-width: 1500px;}
+.meet-author .wrapper{display: flex;align-items: center;justify-content: space-between;background-color: #A0C9A3;padding:70px 120px;border-radius: 15px;}
+.meet-author .meet-author-left{width: 43.5%;}
+.meet-author .meet-author-right{width: 51%;}
+.meet-author .meet-author-right .hetal-photo{width: 100%;}
+.meet-author .meet-author-right .hetal-photo img{width: 100%;aspect-ratio: 100/154;object-position: center center;object-fit: cover;border-radius: 100%;    border-radius: 500px;}
+.meet-author .meet-author-right .icon{position: absolute;right: 45px;top: -90px;}
+.meet-author-left .cookbook-heading{text-align: left;}
+.meet-author-left .cookbook-heading h2{font-size: 60px;padding-bottom: 34px;}
+.meet-author-left .cookbook-heading h2::after{background-image: url('../images/pattern-green.png');}
+.meet-author-left .cookbook-heading p{font-size: 24px;margin-top: 48px;}
+.meet-author-left .sign{font-family: 'Arabilla Signature',sans-serif;font-style: normal;font-weight: 400;font-size: 96px;line-height: 1.94;text-align: center;text-transform: capitalize;color: var(--black);margin-left: -100px;text-shadow: 1px 0 #343434, -1px 0 #343434, 0 1px #343434, 0 -1px #343434, 0.5px 0.5px #343434, -0.5px -0.5px #343434, 0.5px -0.5px #343434, -0.5px 0.5px #343434;}
+.cookbook-get-copy{padding: 90px 0;}
+.cookbook-get-copy .cookbook-heading h2{font-size: 60px;padding-bottom: 34px;}
+.cookbook-get-copy .cookbook-heading h2::after{background-image: url('../images/pattern-orange.png');}
+.cookbook-get-copy .tag-list{margin: 0 auto; margin-top: 35px;max-width: 850px;}
+
 @media only screen and (min-width: 1200px) and (max-width: 1599px){
     .custom-container-small,
     .custom-container{max-width: 1170px;}

@@ -464,6 +464,10 @@ right: 0;}
 .cookbook-slider .box .image-box img{width: 100%;aspect-ratio: 100/100;object-fit: cover;object-position: center center;border-radius: 15px;}
 .cookbook-slider .box h3{font-weight: 400;font-size: 14px;line-height: 1.79;text-align: center;color: #3C1E21;padding: 18px 10px;width: 100%;}
 .cookbook-slider .box h3 a{color: inherit;}
+.cookbook-take-slider {position: relative;}
+.take-a-peek{position: absolute;width: 90.2px;aspect-ratio: 100 / 156;font-weight: 400;font-size: 32px;line-height: 1;text-align: center;color: #3C1E21;bottom: 100%;right: 0;}
+.take-a-peek::after{content: "";background-image: url('../images/arrow.png');width: 45px;aspect-ratio: 100/150;background-size: cover;background-position: center center;bottom: -2px;left: 0;position: absolute;}
+
 .cookbook-tag-section .tag-list{max-width: 960px;margin: 0 auto;padding: 83px 0;}
 .testimonial{padding: 50px 0;overflow: hidden;}
 .testimonial-slider{max-width: 1100px;    margin: 0 auto;}
@@ -625,6 +629,7 @@ right: 0;}
     .cookbook-banner-left .image-box {width: 75%;}
     .cookbook-pink-content .content p{font-size: 18px;}
     .cookbook-slider-section{padding: 60px 0;}
+    .take-a-peek{font-size: 28px;}
     .cookbook-slider .item {padding: 15px;}
     .cookbook-tag-section .tag-list{padding: 60px 0;}
     .meet-author .wrapper{padding: 50px;}
@@ -807,6 +812,9 @@ right: 0;}
     .cookbook-banner-left .image-box {width: 75%;}
     .cookbook-pink-content .content p{font-size: 18px;}
     .cookbook-slider-section{padding: 60px 0;}
+    .cookbook-slider-section .cookbook-heading p{margin: 25px auto;max-width: 650px;}
+    .take-a-peek {font-size: 24px;width: 76px;}
+
     .cookbook-slider .item {padding: 15px;}
     .cookbook-tag-section .tag-list{padding: 0 0 60px 0;}
     .meet-author .wrapper{padding: 50px;}
@@ -818,6 +826,7 @@ right: 0;}
     .meet-author-left .sign{font-size: 70px;}
     .cookbook-get-copy{padding: 60px 0;}
     .cookbook-get-copy .tag-list{max-width: 990px;}
+    
 
 
 }
@@ -1010,7 +1019,10 @@ right: 0;}
     .cookbook-pink-content .content{padding-left: 40px;}
     .cookbook-pink-content .content p{font-size: 16px;}
     .cookbook-slider-section{padding: 60px 0 0 0;}
-    .cookbook-slider-section .cookbook-heading p{margin: 25px 0;}
+    .cookbook-slider-section .cookbook-heading p{margin: 25px auto;max-width: 500px;}
+    .take-a-peek{font-size: 20px;width: 66px;}
+    .take-a-peek::after {width: 33px;}
+
    
     .cookbook-slider .item{padding:0 15px;}
     .cookbook-slider .box h3{padding: 15px 0;}
@@ -1284,7 +1296,7 @@ right: 0;}
     .meet-author-left .sign{margin: 0;font-size: 48px;}
     .cookbook-get-copy{padding: 60px 0;}
     .cookbook-get-copy .cookbook-heading h2{font-size: 36px;}
-
+    .take-a-peek{display: none;}
 
 
 

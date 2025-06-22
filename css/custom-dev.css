@@ -388,8 +388,7 @@ background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);max
 .my-fav-recipes .latest-recipes-section{padding: 0;}
 .my-fav-recipes .fav-recipes-right{width: 50%;padding: 26px 0;}
 .my-fav-recipes .product-box-list .item{width: 50%;}
-.fav-recipes-left{width: 664px;background-color: #F9CCE4;}
-
+.fav-recipes-left{width: 43%;background-color: #F9CCE4;}
 .fav-recipes-left .item{padding: 120px;position: relative;    height: 50%;}
 .fav-recipes-left .item:nth-child(2){background-color: #F6B0D5;}
 .fav-recipes-left .item:nth-child(2)::before{content: "";background-image: url('../images/fav-recipes-left-center.PNG');height: 91px;width: 100%;background-size: cover;position: absolute;bottom: 99%;left: 0;}
@@ -414,6 +413,7 @@ background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);max
 .work-right .box{z-index: 1;position: relative;}
 .work-right .box + .box{margin-top: 29px;}
 @media only screen and (min-width: 1200px) and (max-width: 1599px){
+    .custom-container-small,
     .custom-container{max-width: 1170px;}
     .header-top {padding: 25px 0;}
     .logo a img{height: 36px;}
@@ -498,6 +498,26 @@ background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);max
     .my-travel-stories .heading h2{font-size: 56px;}
     .my-travel-stories .heading h2 span{font-size: 80px;}
     .my-travel-stories p{font-size: 24px;}
+
+    .page-about-me{padding: 100px 0 50px;}
+    .page-about-me h1 {font-size: 200px;}
+    .page-about-me h2{font-size: 150px;}
+    .page-about-me .hetal-photo{margin-top: -30px;}
+    .page-about-me .content p{font-size: 24px;}
+    .about-little-cardamom .heading h2{font-size: 48px;    max-width: 500px;}
+    .about-little-cardamom .content p{font-size: 24px;}
+    .cardamom-list{margin: 0 -12px;}
+    .cardamom-list .item{padding: 10px;}
+    .cardamom-list .box p{font-size: 24px;}
+
+    .my-fav-recipes{margin: 40px 0 70px 0;}
+    .fav-recipes-left {width: 47%;}
+    .fav-recipes-left .item {padding: 75px;}
+    .fav-recipes-left .box p{font-size: 24px;}
+    .work-left .content h2{font-size: 48px;}
+    .work-left .content h3{font-size: 26px;}
+    .work-right h2{font-size: 48px;}
+    .work-right{padding: 80px 0 80px 60px;}
 
 
 }
@@ -625,6 +645,39 @@ background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);max
     .my-travel-stories .heading h2{font-size: 48px;}
     .my-travel-stories .heading h2 span{font-size: 72px;margin-left: 10px;}
     .my-travel-stories p{font-size: 20px;}
+
+    .page-about-me{padding:100px 0 70px 0;}
+    .page-about-me h1 {font-size: 150px;}
+    .page-about-me .hetal-photo{max-width: 400px;}
+    .page-about-me h2{font-size: 100px;}
+    .page-about-me .hetal-photo{margin-top: -16px;}
+    .page-about-me .content p{font-size: 20px;}
+    .page-about-me .content .center-content{max-width: 484px;}
+    .page-about-me .content {margin-top: 60px;}
+    .featured-section{padding: 60px 0;}
+    .about-little-cardamom{padding: 60px 0;}
+    .about-little-cardamom .heading h2{font-size: 40px;max-width: 406px;}
+    .about-little-cardamom .content p{font-size: 20px;}
+    .cardamom-list{margin: 0 -12px;}
+    .cardamom-list .item{padding: 12px;}
+    .cardamom-list .box {padding: 25px;}
+    .cardamom-list .box .icon{padding: 15px 0;}
+    .cardamom-list .box p{font-size: 20px;margin-top: 15px;}
+    .cardamom-list .item:nth-child(7) .box, .cardamom-list .item:nth-child(8) .box{padding: 25px;}
+    .my-fav-recipes{margin: 0 0 60px 0;}
+    .fav-recipes-left {width: 46%;}
+    .fav-recipes-left .item {padding:60px 40px;}
+    .fav-recipes-left .box .icon-head h3 {font-size: 36px;margin-left: 15px;}
+    .fav-recipes-left .box p {font-size: 20px;margin: 30px 0 0;}
+    .fav-recipes-left .item:nth-child(2)::before {height: 44px;}
+
+    .work-left .content h2 {font-size: 40px;margin-top: 20px;}
+    .work-left .content h3 {font-size: 20px;}
+    .work-left .content p{font-size: 16px;}
+    .work-right::before{display: none;}
+    .work-right {padding: 40px;}
+    .work-right h2{font-size: 40px;}
+    .work-right ul li{font-size: 16px;}
 
 
 }
@@ -768,6 +821,42 @@ background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);max
 
     .list-of-travel{margin-top: 28px;}
     .list-of-travel .item h3{font-size: 16px;padding: 15px 5px 0;}
+
+    .page-about-me{padding: 70px 0;}
+    .page-about-me h1 {font-size: 100px;}
+    .page-about-me .hetal-photo{max-width: 360px;}
+    .page-about-me h2{font-size: 80px;}
+    .page-about-me .hetal-photo{margin-top: -16px;}
+    .page-about-me .content p{font-size: 18px;}
+    .page-about-me .content .center-content{max-width: 484px;}
+    .page-about-me .content {margin-top: 60px;}
+    .featured-section{padding: 60px 0;}
+    .about-little-cardamom{padding: 60px 0;}
+    .about-little-cardamom .heading h2{font-size: 36px;    max-width: 380px;}
+    .about-little-cardamom .content p{font-size: 18px;}
+    .cardamom-list{margin: 0 -12px;}
+    .cardamom-list .item{padding: 12px;}
+    .cardamom-list .box {padding: 15px;}
+    .cardamom-list .box .icon{padding: 15px 0;}
+    .cardamom-list .box p{font-size: 18px;margin-top: 15px;}
+    .cardamom-list .item:nth-child(7) .box, .cardamom-list .item:nth-child(8) .box{padding: 15px;}
+    .my-fav-recipes{margin: 0 0 60px 0;}
+    .fav-recipes-left {width: 46%;}
+    .fav-recipes-left .item {padding:40px 20px;}
+    .fav-recipes-left .box .icon-head h3 {font-size: 24px;margin-left: 15px;}
+    .fav-recipes-left .box p {font-size: 18px;margin: 30px 0 0;}
+    .fav-recipes-left .item:nth-child(2)::before {height: 44px;}
+
+    .work-left .content h2 {font-size: 32px;margin-top: 20px;}
+    .work-left .content h3 {font-size: 20px;}
+    .work-left .content p{font-size: 14px;}
+    .work-right::before{display: none;}
+    .work-right {padding: 40px;}
+    .work-right h2{font-size: 34px;}
+    .work-right ul li{font-size: 14px;}
+
+
+
 
 }
 @media only screen and (min-width: 768px){

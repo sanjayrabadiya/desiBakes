@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="shortcut icon" href="images/favicon.png" type="image/jpg">
+		<title>Desi Bakes</title>
+
+		<link rel="stylesheet" type="text/css" href="css/plugins.css">
+		<link rel="stylesheet" type="text/css" href="css/custom-dev.css">
+	</head>
+	<body>
+		<div class="sidebar">			
+			<div class="d-flex align-items-center justify-content-between">
+				<div class="header-search-mobile">
+					<form method="post">
+						<div class="search-box">
+							<input type="search" placeholder="search" id="search" />
+							<div class="search-icon">
+								<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12.375 4.92892H17.6786" stroke="black" stroke-width="1.76786" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M12.375 7.58072H15.0268" stroke="black" stroke-width="1.76786" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M18.5622 10.6745C18.5622 15.3151 14.8055 19.0718 10.1649 19.0718C5.52427 19.0718 1.76758 15.3151 1.76758 10.6745C1.76758 6.03384 5.52427 2.27715 10.1649 2.27715" stroke="black" stroke-width="1.76786" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M19.4466 19.9557L17.6787 18.1879" stroke="black" stroke-width="2.35714" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+
+							</div>
+						</div>									
+					</form>
+				</div>					
+				<button type="button" class="btn-close-sidebar">
+					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+						<path d="M1 17L9.00002 9.00003M9.00002 9.00003L17 1M9.00002 9.00003L1 1M9.00002 9.00003L17 17"
+							stroke="#000" stroke-width="4" stroke-linejoin="round" />
+					</svg>
+				</button>
+			</div>			
+			<div class="sidebar-menu">
+				<ul>
+					<li><a href="javascript:;">Home</a></li>									
+					<li><a href="javascript:;">About</a></li>
+					<li><a href="javascript:;">Recipes</a></li>
+					<li><a href="javascript:;">Buy my Cookbook!</a></li>									
+					<li><a href="javascript:;">Shop</a></li>
+					<li><a href="javascript:;">Travel</a></li>
+					<li><a href="javascript:;">Shop my Amazon</a></li>									
+					<li><a href="javascript:;">Press</a></li>
+					<li><a href="javascript:;">Contact</a></li>
+				</ul>
+			</div>
+			<div class="social-media header-mobile-social-media">
+				<a href="javascript:;" target="_blank" title="Facebook">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M13.6652 21.99H9.22099V12.5458H7V8.90751H9.22099V6.72321C9.22099 3.75633 10.4749 1.98999 14.0365 1.98999H17.0033V5.62939H15.1503C13.763 5.62939 13.6707 6.1385 13.6707 7.0867L13.6652 8.90751H17.0245L16.6309 12.5458H13.6652V21.99Z" fill="#A5396B"/>
+					</svg>
+				</a>
+				<a href="javascript:;" target="_blank" title="Instagram">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M15.9796 1.98999C19.2993 1.98999 22 4.6206 22 7.85396V16.126C22 19.3594 19.2993 21.99 15.9796 21.99H8.02047C4.70076 21.99 2 19.3594 2 16.126V7.85396C2 4.6206 4.70076 1.98999 8.02047 1.98999H15.9796ZM19.826 16.126V7.85396C19.826 5.78817 18.1005 4.10754 15.9796 4.10754H8.02047C5.89955 4.10754 4.17406 5.78817 4.17406 7.85396V16.126C4.17406 18.1918 5.89955 19.8724 8.02047 19.8724H15.9796C18.1005 19.8724 19.826 18.1918 19.826 16.126ZM12.0388 6.40698C13.7978 6.45699 15.2649 7.04198 16.2813 8.09885C17.2471 9.10312 17.7393 10.4492 17.7048 11.9914C17.6716 13.4687 17.0726 14.8526 16.0182 15.8883C14.9471 16.9404 13.5201 17.5199 12 17.5199C8.85429 17.5199 6.29502 15.0272 6.29502 11.9632C6.29502 8.84502 8.88442 6.31712 12.0388 6.40698ZM15.0482 11.9349C15.0615 11.341 14.9498 10.5002 14.3419 9.86819C13.8203 9.32572 12.9971 9.02347 11.9613 8.994C11.9334 8.99321 11.9057 8.99285 11.878 8.99285C11.1065 8.99285 10.3766 9.3012 9.82256 9.86106C9.26133 10.4283 8.95219 11.1748 8.95219 11.9632C8.95219 13.6001 10.3194 14.9318 12 14.9318C13.6716 14.9318 15.0105 13.6154 15.0482 11.9349ZM17.3905 5.49662C18.0685 5.49662 18.6181 6.03191 18.6181 6.69227C18.6181 7.35256 18.0685 7.88785 17.3905 7.88785C16.7125 7.88785 16.1629 7.35256 16.1629 6.69227C16.1629 6.03191 16.7125 5.49662 17.3905 5.49662Z" fill="#A5396B"/>
+					</svg>
+				</a>
+				<a href="javascript:;" target="_blank" title="pinterest">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M10.7637 15.2176C10.2077 17.9703 9.52955 20.6101 7.52088 21.99C6.90029 17.8281 8.43178 14.7028 9.14286 11.3848C7.93108 9.45487 9.28861 5.57269 11.845 6.52942C14.9902 7.70595 9.12053 13.7014 13.0615 14.4513C17.1752 15.2329 18.8548 7.70125 16.3043 5.25181C12.6184 1.71518 5.57332 5.17072 6.43956 10.2341C6.65112 11.4729 8.00277 11.8479 6.98022 13.5568C4.62129 13.062 3.91608 11.3025 4.00775 8.95652C4.1535 5.11782 7.65604 2.4298 11.1692 2.05721C15.612 1.58707 19.7821 3.60045 20.3581 7.55198C21.0057 12.0124 18.3529 16.8431 13.601 16.4952C12.314 16.4 11.7733 15.7971 10.7637 15.2176Z" fill="#A5396B"/>
+					</svg>
+				</a>
+				<a href="javascript:;" target="_blank" title="Youtube">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M22.4882 10.2322C22.4806 9.81033 22.4472 9.27698 22.3888 8.6326C22.3301 7.98793 22.2461 7.41172 22.1368 6.90398C22.0118 6.33382 21.7403 5.85326 21.3224 5.46261C20.9044 5.07195 20.4181 4.84541 19.8632 4.78284C18.1287 4.58765 15.5077 4.48999 12 4.48999C8.49228 4.48999 5.87116 4.58765 4.13679 4.78284C3.58202 4.84541 3.09758 5.07195 2.68362 5.46261C2.26952 5.85312 1.99997 6.33368 1.87498 6.90398C1.7579 7.41187 1.66987 7.98807 1.61133 8.6326C1.55279 9.27698 1.51956 9.81018 1.51179 10.2322C1.50388 10.6541 1.5 11.2399 1.5 11.99C1.5 12.74 1.50388 13.326 1.51179 13.7478C1.51956 14.1698 1.55279 14.703 1.61133 15.3474C1.66987 15.9921 1.75387 16.5683 1.86333 17.076C1.98832 17.6463 2.25974 18.1269 2.67773 18.5174C3.09571 18.9079 3.58216 19.1346 4.13679 19.197C5.87116 19.3924 8.49214 19.49 12 19.49C15.508 19.49 18.1287 19.3924 19.8632 19.197C20.418 19.1346 20.9024 18.9079 21.3165 18.5174C21.7306 18.1269 22 17.6462 22.125 17.076C22.2421 16.5683 22.3301 15.9919 22.3888 15.3474C22.4472 14.703 22.4804 14.1697 22.4882 13.7478C22.4961 13.326 22.5 12.74 22.5 11.99C22.5 11.2399 22.4961 10.6541 22.4882 10.2322ZM16.1485 12.6229L10.1485 16.3727C10.0391 16.4508 9.90618 16.4898 9.74998 16.4898C9.6329 16.4898 9.51179 16.4586 9.38679 16.3961C9.12904 16.2555 9.00016 16.0368 9.00016 15.7399V8.24007C9.00016 7.94334 9.12904 7.72457 9.38679 7.58389C9.65246 7.44308 9.90633 7.45099 10.1485 7.60734L16.1485 11.3573C16.3828 11.4899 16.4999 11.7009 16.4999 11.99C16.4999 12.2791 16.3828 12.4901 16.1485 12.6229Z" fill="#A5396B"/>
+					</svg>
+				</a>
+			</div>				
+		</div>
+		<div class="announcebar">
+			<div class="custom-container">
+				<div class="wrapper">
+					<div class="d-flex align-items-center justify-content-center">
+						<div class="announcebar-book">
+							<img src="images/desi_bakes_white.png" alt="Desi Bakes_white.png" class="lazyload" />
+						</div>
+						<p>Introducing</p>
+						<h2>Desi Bakes</h2>
+						<div class="btn-order-now">
+							<a href="javascript:;" class="btn-custom">Order Now</a>
+						</div>
+						<div class="social-media display-desktop">
+							<a href="javascript:;" target="_blank" title="Facebook">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M13.6652 21.99H9.22099V12.5458H7V8.90751H9.22099V6.72321C9.22099 3.75633 10.4749 1.98999 14.0365 1.98999H17.0033V5.62939H15.1503C13.763 5.62939 13.6707 6.1385 13.6707 7.0867L13.6652 8.90751H17.0245L16.6309 12.5458H13.6652V21.99Z" fill="#A5396B"/>
+								</svg>
+
+							</a>
+							<a href="javascript:;" target="_blank" title="Instagram">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M15.9796 1.98999C19.2993 1.98999 22 4.6206 22 7.85396V16.126C22 19.3594 19.2993 21.99 15.9796 21.99H8.02047C4.70076 21.99 2 19.3594 2 16.126V7.85396C2 4.6206 4.70076 1.98999 8.02047 1.98999H15.9796ZM19.826 16.126V7.85396C19.826 5.78817 18.1005 4.10754 15.9796 4.10754H8.02047C5.89955 4.10754 4.17406 5.78817 4.17406 7.85396V16.126C4.17406 18.1918 5.89955 19.8724 8.02047 19.8724H15.9796C18.1005 19.8724 19.826 18.1918 19.826 16.126ZM12.0388 6.40698C13.7978 6.45699 15.2649 7.04198 16.2813 8.09885C17.2471 9.10312 17.7393 10.4492 17.7048 11.9914C17.6716 13.4687 17.0726 14.8526 16.0182 15.8883C14.9471 16.9404 13.5201 17.5199 12 17.5199C8.85429 17.5199 6.29502 15.0272 6.29502 11.9632C6.29502 8.84502 8.88442 6.31712 12.0388 6.40698ZM15.0482 11.9349C15.0615 11.341 14.9498 10.5002 14.3419 9.86819C13.8203 9.32572 12.9971 9.02347 11.9613 8.994C11.9334 8.99321 11.9057 8.99285 11.878 8.99285C11.1065 8.99285 10.3766 9.3012 9.82256 9.86106C9.26133 10.4283 8.95219 11.1748 8.95219 11.9632C8.95219 13.6001 10.3194 14.9318 12 14.9318C13.6716 14.9318 15.0105 13.6154 15.0482 11.9349ZM17.3905 5.49662C18.0685 5.49662 18.6181 6.03191 18.6181 6.69227C18.6181 7.35256 18.0685 7.88785 17.3905 7.88785C16.7125 7.88785 16.1629 7.35256 16.1629 6.69227C16.1629 6.03191 16.7125 5.49662 17.3905 5.49662Z" fill="#A5396B"/>
+								</svg>
+							</a>
+							<a href="javascript:;" target="_blank" title="pinterest">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M10.7637 15.2176C10.2077 17.9703 9.52955 20.6101 7.52088 21.99C6.90029 17.8281 8.43178 14.7028 9.14286 11.3848C7.93108 9.45487 9.28861 5.57269 11.845 6.52942C14.9902 7.70595 9.12053 13.7014 13.0615 14.4513C17.1752 15.2329 18.8548 7.70125 16.3043 5.25181C12.6184 1.71518 5.57332 5.17072 6.43956 10.2341C6.65112 11.4729 8.00277 11.8479 6.98022 13.5568C4.62129 13.062 3.91608 11.3025 4.00775 8.95652C4.1535 5.11782 7.65604 2.4298 11.1692 2.05721C15.612 1.58707 19.7821 3.60045 20.3581 7.55198C21.0057 12.0124 18.3529 16.8431 13.601 16.4952C12.314 16.4 11.7733 15.7971 10.7637 15.2176Z" fill="#A5396B"/>
+								</svg>
+							</a>
+							<a href="javascript:;" target="_blank" title="Youtube">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M22.4882 10.2322C22.4806 9.81033 22.4472 9.27698 22.3888 8.6326C22.3301 7.98793 22.2461 7.41172 22.1368 6.90398C22.0118 6.33382 21.7403 5.85326 21.3224 5.46261C20.9044 5.07195 20.4181 4.84541 19.8632 4.78284C18.1287 4.58765 15.5077 4.48999 12 4.48999C8.49228 4.48999 5.87116 4.58765 4.13679 4.78284C3.58202 4.84541 3.09758 5.07195 2.68362 5.46261C2.26952 5.85312 1.99997 6.33368 1.87498 6.90398C1.7579 7.41187 1.66987 7.98807 1.61133 8.6326C1.55279 9.27698 1.51956 9.81018 1.51179 10.2322C1.50388 10.6541 1.5 11.2399 1.5 11.99C1.5 12.74 1.50388 13.326 1.51179 13.7478C1.51956 14.1698 1.55279 14.703 1.61133 15.3474C1.66987 15.9921 1.75387 16.5683 1.86333 17.076C1.98832 17.6463 2.25974 18.1269 2.67773 18.5174C3.09571 18.9079 3.58216 19.1346 4.13679 19.197C5.87116 19.3924 8.49214 19.49 12 19.49C15.508 19.49 18.1287 19.3924 19.8632 19.197C20.418 19.1346 20.9024 18.9079 21.3165 18.5174C21.7306 18.1269 22 17.6462 22.125 17.076C22.2421 16.5683 22.3301 15.9919 22.3888 15.3474C22.4472 14.703 22.4804 14.1697 22.4882 13.7478C22.4961 13.326 22.5 12.74 22.5 11.99C22.5 11.2399 22.4961 10.6541 22.4882 10.2322ZM16.1485 12.6229L10.1485 16.3727C10.0391 16.4508 9.90618 16.4898 9.74998 16.4898C9.6329 16.4898 9.51179 16.4586 9.38679 16.3961C9.12904 16.2555 9.00016 16.0368 9.00016 15.7399V8.24007C9.00016 7.94334 9.12904 7.72457 9.38679 7.58389C9.65246 7.44308 9.90633 7.45099 10.1485 7.60734L16.1485 11.3573C16.3828 11.4899 16.4999 11.7009 16.4999 11.99C16.4999 12.2791 16.3828 12.4901 16.1485 12.6229Z" fill="#A5396B"/>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<header>
+			<div class="header-top">	
+				<div class="custom-container">
+					<div class="wrapper d-flex align-items-center justify-content-between">									
+						<div class="logo">
+							<a href="index.html" title="Shey cooks">
+								<img src="images/logo.png" alt="logo" title="Ami Cordert">
+							</a>
+						</div>
+						<div class="menu-icon ml-auto display-mobile">
+							<svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect x="0.359375" y="0.571411" width="17.28" height="2.46858" rx="1.23429" fill="#A5396B"/>
+								<rect x="0.359375" y="7.36002" width="17.28" height="2.46858" rx="1.23429" fill="#A5396B"/>
+								<rect x="0.359375" y="13.5315" width="17.28" height="2.46858" rx="1.23429" fill="#A5396B"/>
+							</svg>
+
+						</div>
+						<div class="header-right ml-auto display-desktop">
+							<div class="d-flex align-items-center">
+								<div class="menu">
+									<ul class="d-flex">
+										<li><a href="javascript:;">Recipes</a></li>									
+										<li><a href="javascript:;">About</a></li>
+										<li><a href="javascript:;">Contact</a></li>
+									</ul>
+								</div>
+								<div class="header-search">
+									<form method="post">
+										<div class="search-box">
+											<input type="search" placeholder="search" id="search" />
+											<div class="search-icon">
+												<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12.375 4.92892H17.6786" stroke="black" stroke-width="1.76786" stroke-linecap="round" stroke-linejoin="round"/>
+													<path d="M12.375 7.58072H15.0268" stroke="black" stroke-width="1.76786" stroke-linecap="round" stroke-linejoin="round"/>
+													<path d="M18.5622 10.6745C18.5622 15.3151 14.8055 19.0718 10.1649 19.0718C5.52427 19.0718 1.76758 15.3151 1.76758 10.6745C1.76758 6.03384 5.52427 2.27715 10.1649 2.27715" stroke="black" stroke-width="1.76786" stroke-linecap="round" stroke-linejoin="round"/>
+													<path d="M19.4466 19.9557L17.6787 18.1879" stroke="black" stroke-width="2.35714" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+
+											</div>
+										</div>									
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-main-menu display-desktop">
+				<div class="custom-container">
+					<div class="main-menu">
+						<ul>
+							<li><a href="javascript:;">Home</a></li>									
+							<li><a href="javascript:;">About</a></li>
+							<li><a href="javascript:;">Recipes</a></li>
+							<li><a href="javascript:;">Buy my Cookbook!</a></li>									
+							<li><a href="javascript:;">Shop</a></li>
+							<li><a href="javascript:;">Travel</a></li>
+							<li><a href="javascript:;">Shop my Amazon</a></li>									
+							<li><a href="javascript:;">Press</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="contact-section">
+			<div class="custom-container">
+				<div class="wrapper">
+					<div class="contact-left">
+						<img src="images/view-holi-collection-right.jpg" alt="view-holi-collection-right" class="lazyload" />
+					</div>
+					<div class="contact-right">
+						<div class="circle-text">
+							<img src="images/oh-hello-there.png" alt="oh-hello-there" class="lazyload" />
+						</div>
+						<div class="form-information">
+							<h1>say hi!</h1>
+							<div class="line text-center">
+								<svg width="182" height="11" viewBox="0 0 182 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2.65234 3.10887C15.226 3.10887 15.226 7.91716 27.8117 7.91716C40.3974 7.91716 40.3974 3.10887 52.9711 3.10887C65.5448 3.10887 65.5568 7.91716 78.1305 7.91716C90.7042 7.91716 90.7162 3.10887 103.29 3.10887C115.864 3.10887 115.876 7.91716 128.449 7.91716C141.023 7.91716 141.035 3.10887 153.621 3.10887C166.206 3.10887 166.206 7.91716 178.792 7.91716" stroke="#A5396B" stroke-width="4.80829" stroke-miterlimit="10" stroke-linecap="round"/>
+								</svg>
+
+							</div>
+							<h3>i’d love to hear from you.</h3>
+							<div class="contact-form">
+								<form>
+									<div class="form-group">
+										<input type="text" id="contact" class="form-input" placeholder="Contact" />
+									</div>
+									<div class="form-group">
+										<input type="text" id="name" class="form-input" placeholder="Name" />
+									</div>
+									<div class="form-group">
+										<input type="email" id="email" class="form-input" placeholder="Email" />
+									</div>
+									<div class="form-group">
+										<input type="text" id="subject" class="form-input" placeholder="Subject" />
+									</div>
+									<div class="form-group">
+										<textarea id="message" class="form-input" placeholder="Message" ></textarea>
+									</div>
+									<button type="submit" class="btm-contact-submit">
+										<span>Submit</span>
+										<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect x="0.429688" y="0.92749" width="40.8705" height="40.8705" rx="20.4352" fill="#A5396B"/>
+											<g clip-path="url(#clip0_330_909)">
+											<g clip-path="url(#clip1_330_909)">
+											<path d="M24.2052 25.9357C23.475 26.6659 23.475 27.8499 24.2052 28.5801C24.9354 29.3104 26.1194 29.3104 26.8496 28.5801L24.2052 25.9357ZM31.4918 21.2935L32.814 22.6157L34.1359 21.2939L32.8144 19.9716L31.4918 21.2935ZM26.3939 13.548C25.6638 12.8176 24.4798 12.8173 23.7494 13.5474C23.019 14.2774 23.0187 15.4614 23.7487 16.1918L26.3939 13.548ZM8.70973 19.5446C7.67702 19.5446 6.83984 20.3818 6.83984 21.4145C6.83984 22.4472 7.67702 23.2844 8.70973 23.2844V19.5446ZM26.8496 28.5801L32.814 22.6157L30.1696 19.9713L24.2052 25.9357L26.8496 28.5801ZM32.8144 19.9716L26.3939 13.548L23.7487 16.1918L30.1693 22.6154L32.8144 19.9716ZM8.70973 23.2844H30.5033V19.5446H8.70973V23.2844Z" fill="white"/>
+											</g>
+											</g>
+											<defs>
+											<clipPath id="clip0_330_909">
+											<rect width="40.8705" height="16.829" fill="white" transform="translate(0.429688 13)"/>
+											</clipPath>
+											<clipPath id="clip1_330_909">
+											<rect width="28.0484" height="16.829" fill="white" transform="translate(6.83984 13)"/>
+											</clipPath>
+											</defs>
+										</svg>
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="footer-top-section">
+				<div class="custom-container">
+					<div class="footer-top">
+						<div class="footer-top-left">
+							<div class="logo">
+								<a href="javascript:;">
+									<img src="images/logo-white.png" alt="logo-white" class="lazyload" />
+								</a>
+							</div>
+							<div class="buttons">
+								<a href="javascript:;" class="btn-custom">Subscribe to MY Substack</a>
+								<a href="javascript:;" class="btn-custom">Work with me</a>
+							</div>
+							<div class="social-media-copyright">
+								<div class="social-media">
+									<a href="javascript:;" target="_blank" title="Facebook">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M13.6652 21.99H9.22099V12.5458H7V8.90751H9.22099V6.72321C9.22099 3.75633 10.4749 1.98999 14.0365 1.98999H17.0033V5.62939H15.1503C13.763 5.62939 13.6707 6.1385 13.6707 7.0867L13.6652 8.90751H17.0245L16.6309 12.5458H13.6652V21.99Z" fill="#fff"/>
+										</svg>
+									</a>
+									<a href="javascript:;" target="_blank" title="Instagram">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M15.9796 1.98999C19.2993 1.98999 22 4.6206 22 7.85396V16.126C22 19.3594 19.2993 21.99 15.9796 21.99H8.02047C4.70076 21.99 2 19.3594 2 16.126V7.85396C2 4.6206 4.70076 1.98999 8.02047 1.98999H15.9796ZM19.826 16.126V7.85396C19.826 5.78817 18.1005 4.10754 15.9796 4.10754H8.02047C5.89955 4.10754 4.17406 5.78817 4.17406 7.85396V16.126C4.17406 18.1918 5.89955 19.8724 8.02047 19.8724H15.9796C18.1005 19.8724 19.826 18.1918 19.826 16.126ZM12.0388 6.40698C13.7978 6.45699 15.2649 7.04198 16.2813 8.09885C17.2471 9.10312 17.7393 10.4492 17.7048 11.9914C17.6716 13.4687 17.0726 14.8526 16.0182 15.8883C14.9471 16.9404 13.5201 17.5199 12 17.5199C8.85429 17.5199 6.29502 15.0272 6.29502 11.9632C6.29502 8.84502 8.88442 6.31712 12.0388 6.40698ZM15.0482 11.9349C15.0615 11.341 14.9498 10.5002 14.3419 9.86819C13.8203 9.32572 12.9971 9.02347 11.9613 8.994C11.9334 8.99321 11.9057 8.99285 11.878 8.99285C11.1065 8.99285 10.3766 9.3012 9.82256 9.86106C9.26133 10.4283 8.95219 11.1748 8.95219 11.9632C8.95219 13.6001 10.3194 14.9318 12 14.9318C13.6716 14.9318 15.0105 13.6154 15.0482 11.9349ZM17.3905 5.49662C18.0685 5.49662 18.6181 6.03191 18.6181 6.69227C18.6181 7.35256 18.0685 7.88785 17.3905 7.88785C16.7125 7.88785 16.1629 7.35256 16.1629 6.69227C16.1629 6.03191 16.7125 5.49662 17.3905 5.49662Z" fill="#fff"/>
+										</svg>
+									</a>
+									<a href="javascript:;" target="_blank" title="pinterest">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M10.7637 15.2176C10.2077 17.9703 9.52955 20.6101 7.52088 21.99C6.90029 17.8281 8.43178 14.7028 9.14286 11.3848C7.93108 9.45487 9.28861 5.57269 11.845 6.52942C14.9902 7.70595 9.12053 13.7014 13.0615 14.4513C17.1752 15.2329 18.8548 7.70125 16.3043 5.25181C12.6184 1.71518 5.57332 5.17072 6.43956 10.2341C6.65112 11.4729 8.00277 11.8479 6.98022 13.5568C4.62129 13.062 3.91608 11.3025 4.00775 8.95652C4.1535 5.11782 7.65604 2.4298 11.1692 2.05721C15.612 1.58707 19.7821 3.60045 20.3581 7.55198C21.0057 12.0124 18.3529 16.8431 13.601 16.4952C12.314 16.4 11.7733 15.7971 10.7637 15.2176Z" fill="#fff"/>
+										</svg>
+									</a>
+									<a href="javascript:;" target="_blank" title="Youtube">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M22.4882 10.2322C22.4806 9.81033 22.4472 9.27698 22.3888 8.6326C22.3301 7.98793 22.2461 7.41172 22.1368 6.90398C22.0118 6.33382 21.7403 5.85326 21.3224 5.46261C20.9044 5.07195 20.4181 4.84541 19.8632 4.78284C18.1287 4.58765 15.5077 4.48999 12 4.48999C8.49228 4.48999 5.87116 4.58765 4.13679 4.78284C3.58202 4.84541 3.09758 5.07195 2.68362 5.46261C2.26952 5.85312 1.99997 6.33368 1.87498 6.90398C1.7579 7.41187 1.66987 7.98807 1.61133 8.6326C1.55279 9.27698 1.51956 9.81018 1.51179 10.2322C1.50388 10.6541 1.5 11.2399 1.5 11.99C1.5 12.74 1.50388 13.326 1.51179 13.7478C1.51956 14.1698 1.55279 14.703 1.61133 15.3474C1.66987 15.9921 1.75387 16.5683 1.86333 17.076C1.98832 17.6463 2.25974 18.1269 2.67773 18.5174C3.09571 18.9079 3.58216 19.1346 4.13679 19.197C5.87116 19.3924 8.49214 19.49 12 19.49C15.508 19.49 18.1287 19.3924 19.8632 19.197C20.418 19.1346 20.9024 18.9079 21.3165 18.5174C21.7306 18.1269 22 17.6462 22.125 17.076C22.2421 16.5683 22.3301 15.9919 22.3888 15.3474C22.4472 14.703 22.4804 14.1697 22.4882 13.7478C22.4961 13.326 22.5 12.74 22.5 11.99C22.5 11.2399 22.4961 10.6541 22.4882 10.2322ZM16.1485 12.6229L10.1485 16.3727C10.0391 16.4508 9.90618 16.4898 9.74998 16.4898C9.6329 16.4898 9.51179 16.4586 9.38679 16.3961C9.12904 16.2555 9.00016 16.0368 9.00016 15.7399V8.24007C9.00016 7.94334 9.12904 7.72457 9.38679 7.58389C9.65246 7.44308 9.90633 7.45099 10.1485 7.60734L16.1485 11.3573C16.3828 11.4899 16.4999 11.7009 16.4999 11.99C16.4999 12.2791 16.3828 12.4901 16.1485 12.6229Z" fill="#fff"/>
+										</svg>
+									</a>
+								</div>
+								<p>© Milk & Cardamom  2024 All Rights Reserved.</p>	
+							</div>
+						</div>
+						<div class="footer-top-right">
+							<div class="footer-search">
+								<form>
+									<input type="search" id="search" placeholder="I'm in the mood for..." />
+									<button type="submit" class="btn-search-icon">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M18.7188 7.74961C18.7153 11.6822 15.5264 14.8684 11.5938 14.8684C10.6417 14.8892 9.69916 14.6745 8.85001 14.2434L4.06252 19.0996C3.69501 19.435 3.222 19.6318 2.72501 19.6559C2.25138 19.6422 1.80223 19.4423 1.47501 19.0996C0.776558 18.3737 0.776558 17.2256 1.47501 16.4996L5.93751 12.0121C4.06347 9.53896 4.00903 6.13632 5.803 3.60449C7.59697 1.07265 10.8252 -0.00397152 13.7798 0.94425C16.7344 1.89247 18.7332 4.64666 18.7188 7.74961ZM15.9375 7.74961C15.9375 5.36098 14.0011 3.42461 11.6125 3.42461C9.22388 3.42461 7.28751 5.36098 7.28751 7.74961C7.28751 10.1382 9.22388 12.0746 11.6125 12.0746C14.0011 12.0746 15.9375 10.1382 15.9375 7.74961Z" fill="#2A2B2A"/>
+											</svg>
+									</button>
+								</form>
+							</div>
+							<div class="recipe-key">
+								<h3>Recipe Key</h3>
+								<div class="recipe-key-list">
+									<div class="item">
+										<div class="cat-circle bg-darkpink">LV</div>
+										<p>Lacto-Ovo Vegetarian</p>
+									</div>
+									<div class="item">
+										<div class="cat-circle bg-lightpink">EG</div>
+										<p>Eggless</p>
+									</div>
+									<div class="item">
+										<div class="cat-circle bg-green">NF</div>
+										<p>Nut Free</p>
+									</div>
+									<div class="item">
+										<div class="cat-circle bg-orange">VG</div>
+										<p>Vegan</p>
+									</div>
+									<div class="item">
+										<div class="cat-circle bg-lightpink-heavy">DF</div>
+										<p>Dairy Free</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="instagram-section">
+			<div class="instagram-slider">
+				<div class="item">					
+					<a href="https://www.sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4" data-fancybox="instagram">
+						<img src="images/instagram-video-1.jpg" alt="instagram-video-1" class="lazyload" />
+						<div class="play-icon">
+							<svg width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_89_545)">
+								<path d="M53.8598 38.9164L37.0404 26.69C36.4231 26.2425 35.6037 26.1751 34.9272 26.5228C34.2452 26.8679 33.8193 27.5687 33.8193 28.3261V52.7708C33.8193 53.5363 34.2452 54.2344 34.9272 54.5795C35.2156 54.725 35.5309 54.7978 35.849 54.7978C36.2641 54.7978 36.6846 54.6657 37.0404 54.4043L53.8598 42.1886C54.3908 41.7978 54.7007 41.194 54.7007 40.5525C54.7034 39.9002 54.3854 39.2991 53.8598 38.9164Z" fill="white"/>
+								<path d="M40.5013 0.00537109C18.1294 0.00537109 0 18.1348 0 40.5067C0 62.8706 18.1294 80.9946 40.5013 80.9946C62.8679 80.9946 81 62.8679 81 40.5067C81.0027 18.1348 62.8679 0.00537109 40.5013 0.00537109ZM40.5013 74.2372C21.8706 74.2372 6.7655 59.1401 6.7655 40.5067C6.7655 21.8814 21.8706 6.76548 40.5013 6.76548C59.1294 6.76548 74.2318 21.8787 74.2318 40.5067C74.2345 59.1401 59.1294 74.2372 40.5013 74.2372Z" fill="white"/>
+								</g>
+								<defs>
+								<clipPath id="clip0_89_545">
+								<rect width="81" height="81" fill="white"/>
+								</clipPath>
+								</defs>
+							</svg>
+						</div>
+					</a>
+				</div>
+				<div class="item">					
+					<a href="https://www.sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4" data-fancybox="instagram">
+						<img src="images/instagram-video-2.jpg" alt="instagram-video-2" class="lazyload" />
+						<div class="play-icon">
+							<svg width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_89_545)">
+								<path d="M53.8598 38.9164L37.0404 26.69C36.4231 26.2425 35.6037 26.1751 34.9272 26.5228C34.2452 26.8679 33.8193 27.5687 33.8193 28.3261V52.7708C33.8193 53.5363 34.2452 54.2344 34.9272 54.5795C35.2156 54.725 35.5309 54.7978 35.849 54.7978C36.2641 54.7978 36.6846 54.6657 37.0404 54.4043L53.8598 42.1886C54.3908 41.7978 54.7007 41.194 54.7007 40.5525C54.7034 39.9002 54.3854 39.2991 53.8598 38.9164Z" fill="white"/>
+								<path d="M40.5013 0.00537109C18.1294 0.00537109 0 18.1348 0 40.5067C0 62.8706 18.1294 80.9946 40.5013 80.9946C62.8679 80.9946 81 62.8679 81 40.5067C81.0027 18.1348 62.8679 0.00537109 40.5013 0.00537109ZM40.5013 74.2372C21.8706 74.2372 6.7655 59.1401 6.7655 40.5067C6.7655 21.8814 21.8706 6.76548 40.5013 6.76548C59.1294 6.76548 74.2318 21.8787 74.2318 40.5067C74.2345 59.1401 59.1294 74.2372 40.5013 74.2372Z" fill="white"/>
+								</g>
+								<defs>
+								<clipPath id="clip0_89_545">
+								<rect width="81" height="81" fill="white"/>
+								</clipPath>
+								</defs>
+							</svg>
+						</div>
+					</a>
+				</div>
+				<div class="item">					
+					<a href="https://www.sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4" data-fancybox="instagram">
+						<img src="images/instagram-video-3.jpg" alt="instagram-video-3" class="lazyload" />
+						<div class="play-icon">
+							<svg width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_89_545)">
+								<path d="M53.8598 38.9164L37.0404 26.69C36.4231 26.2425 35.6037 26.1751 34.9272 26.5228C34.2452 26.8679 33.8193 27.5687 33.8193 28.3261V52.7708C33.8193 53.5363 34.2452 54.2344 34.9272 54.5795C35.2156 54.725 35.5309 54.7978 35.849 54.7978C36.2641 54.7978 36.6846 54.6657 37.0404 54.4043L53.8598 42.1886C54.3908 41.7978 54.7007 41.194 54.7007 40.5525C54.7034 39.9002 54.3854 39.2991 53.8598 38.9164Z" fill="white"/>
+								<path d="M40.5013 0.00537109C18.1294 0.00537109 0 18.1348 0 40.5067C0 62.8706 18.1294 80.9946 40.5013 80.9946C62.8679 80.9946 81 62.8679 81 40.5067C81.0027 18.1348 62.8679 0.00537109 40.5013 0.00537109ZM40.5013 74.2372C21.8706 74.2372 6.7655 59.1401 6.7655 40.5067C6.7655 21.8814 21.8706 6.76548 40.5013 6.76548C59.1294 6.76548 74.2318 21.8787 74.2318 40.5067C74.2345 59.1401 59.1294 74.2372 40.5013 74.2372Z" fill="white"/>
+								</g>
+								<defs>
+								<clipPath id="clip0_89_545">
+								<rect width="81" height="81" fill="white"/>
+								</clipPath>
+								</defs>
+							</svg>
+						</div>
+					</a>
+				</div>
+				<div class="item">					
+					<a href="https://www.sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4" data-fancybox="instagram">
+						<img src="images/instagram-video-4.jpg" alt="instagram-video-4" class="lazyload" />
+						<div class="play-icon">
+							<svg width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_89_545)">
+								<path d="M53.8598 38.9164L37.0404 26.69C36.4231 26.2425 35.6037 26.1751 34.9272 26.5228C34.2452 26.8679 33.8193 27.5687 33.8193 28.3261V52.7708C33.8193 53.5363 34.2452 54.2344 34.9272 54.5795C35.2156 54.725 35.5309 54.7978 35.849 54.7978C36.2641 54.7978 36.6846 54.6657 37.0404 54.4043L53.8598 42.1886C54.3908 41.7978 54.7007 41.194 54.7007 40.5525C54.7034 39.9002 54.3854 39.2991 53.8598 38.9164Z" fill="white"/>
+								<path d="M40.5013 0.00537109C18.1294 0.00537109 0 18.1348 0 40.5067C0 62.8706 18.1294 80.9946 40.5013 80.9946C62.8679 80.9946 81 62.8679 81 40.5067C81.0027 18.1348 62.8679 0.00537109 40.5013 0.00537109ZM40.5013 74.2372C21.8706 74.2372 6.7655 59.1401 6.7655 40.5067C6.7655 21.8814 21.8706 6.76548 40.5013 6.76548C59.1294 6.76548 74.2318 21.8787 74.2318 40.5067C74.2345 59.1401 59.1294 74.2372 40.5013 74.2372Z" fill="white"/>
+								</g>
+								<defs>
+								<clipPath id="clip0_89_545">
+								<rect width="81" height="81" fill="white"/>
+								</clipPath>
+								</defs>
+							</svg>
+						</div>
+					</a>
+				</div>
+				<div class="item">					
+					<a href="https://www.sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4" data-fancybox="instagram">
+						<img src="images/instagram-video-5.jpg" alt="instagram-video-5" class="lazyload" />
+						<div class="play-icon">
+							<svg width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_89_545)">
+								<path d="M53.8598 38.9164L37.0404 26.69C36.4231 26.2425 35.6037 26.1751 34.9272 26.5228C34.2452 26.8679 33.8193 27.5687 33.8193 28.3261V52.7708C33.8193 53.5363 34.2452 54.2344 34.9272 54.5795C35.2156 54.725 35.5309 54.7978 35.849 54.7978C36.2641 54.7978 36.6846 54.6657 37.0404 54.4043L53.8598 42.1886C54.3908 41.7978 54.7007 41.194 54.7007 40.5525C54.7034 39.9002 54.3854 39.2991 53.8598 38.9164Z" fill="white"/>
+								<path d="M40.5013 0.00537109C18.1294 0.00537109 0 18.1348 0 40.5067C0 62.8706 18.1294 80.9946 40.5013 80.9946C62.8679 80.9946 81 62.8679 81 40.5067C81.0027 18.1348 62.8679 0.00537109 40.5013 0.00537109ZM40.5013 74.2372C21.8706 74.2372 6.7655 59.1401 6.7655 40.5067C6.7655 21.8814 21.8706 6.76548 40.5013 6.76548C59.1294 6.76548 74.2318 21.8787 74.2318 40.5067C74.2345 59.1401 59.1294 74.2372 40.5013 74.2372Z" fill="white"/>
+								</g>
+								<defs>
+								<clipPath id="clip0_89_545">
+								<rect width="81" height="81" fill="white"/>
+								</clipPath>
+								</defs>
+							</svg>
+						</div>
+					</a>
+				</div>
+				<div class="item">					
+					<a href="https://www.sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4" data-fancybox="instagram">
+						<img src="images/instagram-video-6.jpg" alt="instagram-video-6" class="lazyload" />
+						<div class="play-icon">
+							<svg width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_89_545)">
+								<path d="M53.8598 38.9164L37.0404 26.69C36.4231 26.2425 35.6037 26.1751 34.9272 26.5228C34.2452 26.8679 33.8193 27.5687 33.8193 28.3261V52.7708C33.8193 53.5363 34.2452 54.2344 34.9272 54.5795C35.2156 54.725 35.5309 54.7978 35.849 54.7978C36.2641 54.7978 36.6846 54.6657 37.0404 54.4043L53.8598 42.1886C54.3908 41.7978 54.7007 41.194 54.7007 40.5525C54.7034 39.9002 54.3854 39.2991 53.8598 38.9164Z" fill="white"/>
+								<path d="M40.5013 0.00537109C18.1294 0.00537109 0 18.1348 0 40.5067C0 62.8706 18.1294 80.9946 40.5013 80.9946C62.8679 80.9946 81 62.8679 81 40.5067C81.0027 18.1348 62.8679 0.00537109 40.5013 0.00537109ZM40.5013 74.2372C21.8706 74.2372 6.7655 59.1401 6.7655 40.5067C6.7655 21.8814 21.8706 6.76548 40.5013 6.76548C59.1294 6.76548 74.2318 21.8787 74.2318 40.5067C74.2345 59.1401 59.1294 74.2372 40.5013 74.2372Z" fill="white"/>
+								</g>
+								<defs>
+								<clipPath id="clip0_89_545">
+								<rect width="81" height="81" fill="white"/>
+								</clipPath>
+								</defs>
+							</svg>
+						</div>
+					</a>
+				</div>
+				<div class="item">					
+					<a href="https://www.sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4" data-fancybox="instagram">
+						<img src="images/instagram-video-7.jpg" alt="instagram-video-7" class="lazyload" />
+						<div class="play-icon">
+							<svg width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_89_545)">
+								<path d="M53.8598 38.9164L37.0404 26.69C36.4231 26.2425 35.6037 26.1751 34.9272 26.5228C34.2452 26.8679 33.8193 27.5687 33.8193 28.3261V52.7708C33.8193 53.5363 34.2452 54.2344 34.9272 54.5795C35.2156 54.725 35.5309 54.7978 35.849 54.7978C36.2641 54.7978 36.6846 54.6657 37.0404 54.4043L53.8598 42.1886C54.3908 41.7978 54.7007 41.194 54.7007 40.5525C54.7034 39.9002 54.3854 39.2991 53.8598 38.9164Z" fill="white"/>
+								<path d="M40.5013 0.00537109C18.1294 0.00537109 0 18.1348 0 40.5067C0 62.8706 18.1294 80.9946 40.5013 80.9946C62.8679 80.9946 81 62.8679 81 40.5067C81.0027 18.1348 62.8679 0.00537109 40.5013 0.00537109ZM40.5013 74.2372C21.8706 74.2372 6.7655 59.1401 6.7655 40.5067C6.7655 21.8814 21.8706 6.76548 40.5013 6.76548C59.1294 6.76548 74.2318 21.8787 74.2318 40.5067C74.2345 59.1401 59.1294 74.2372 40.5013 74.2372Z" fill="white"/>
+								</g>
+								<defs>
+								<clipPath id="clip0_89_545">
+								<rect width="81" height="81" fill="white"/>
+								</clipPath>
+								</defs>
+							</svg>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery.min.js" defer></script>
+		<script src="js/plugins.js" defer></script>
+		<script src="js/custom.js" defer></script>
+	</body>
+</html>

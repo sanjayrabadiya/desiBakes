@@ -491,7 +491,7 @@ right: 0;}
 .slick-arrow.slick-next{right: 0;}
 
 .meet-author{padding: 90px 0 0 0;}
-.meet-author .custom-container{max-width: 1500px;}
+
 .meet-author .wrapper{display: flex;align-items: center;justify-content: space-between;background-color: #A0C9A3;padding:70px 120px;border-radius: 15px;}
 .meet-author .meet-author-left{width: 43.5%;}
 .meet-author .meet-author-right{width: 51%;}
@@ -509,6 +509,29 @@ right: 0;}
 .cookbook-get-copy .cookbook-heading h2::after{background-image: url('../images/pattern-orange.png');}
 .cookbook-get-copy .tag-list{margin: 0 auto; margin-top: 35px;max-width: 850px;}
 
+.contact-section{padding: 154px 0;}
+
+.contact-section .wrapper{display: flex;flex-wrap: wrap;border-radius: 15px;background-color: #F4C7E0;}
+.contact-left{width: 50%;}
+.contact-left img{width: 100%;aspect-ratio: 100/115;object-fit: cover;object-position: center center;border-radius: 15px 0 0 15px;height: 100%;}
+.contact-right{position: relative;width: 50%; display: flex; align-items: center;padding: 25px 57px;}
+.contact-right .circle-text{position: absolute;width: 148px;right: 0;transform: translate(33%, -33%);top: 0}
+.contact-right .circle-text img{width: 100%;aspect-ratio: 100/100;object-fit: cover;object-position: center center;}
+.form-information{width: 100%;}
+.form-information h1{font-family: var(--heading-font);font-weight: 700;font-size: 53.6425px;line-height: 1.28;text-align: center;text-transform: uppercase;color: var(--dark-pink);}
+.form-information h3{font-weight: 900;font-size: 21.6373px;line-height: 1.22;text-align: center;letter-spacing: 2.16373px;text-transform: uppercase;color: var(--dark-pink);}
+.form-information .line{margin: 24px 0;}
+.contact-form{margin-top: 67px;padding-right: 67px;position: relative;}
+.contact-form .form-group{margin-bottom: 19px;}
+.contact-form .form-group .form-input{background-color: var(--white);height: 48px;font-family: var(--primary-font);font-weight: 500;font-size: 18.0311px;line-height: 1.6;color: #3B3B3B;padding: 12px 20px;width: 100%;border:0;}
+.contact-form .form-group textarea.form-input{min-height: 135px;}
+.btm-contact-submit{position: absolute;right: -10px;bottom: 0;background-color: transparent;border:0;padding: 0;    text-align: left;}
+.btm-contact-submit span{font-weight: 500;font-size: 19.2332px;line-height: 1.15;color: #404040;display: block;}
+
+@media only screen and (min-width: 1600px){
+    .meet-author .custom-container{max-width: 1500px;}
+    .contact-section .custom-container{max-width: 1416px;}
+}
 @media only screen and (min-width: 1200px) and (max-width: 1599px){
     .custom-container-small,
     .custom-container{max-width: 1170px;}
@@ -640,7 +663,8 @@ right: 0;}
     .meet-author-left .sign{font-size: 85px;}
     .cookbook-get-copy{padding: 80px 0;}
 
-
+    .contact-section{padding: 100px 0;overflow: hidden;}
+    .contact-form{margin-top: 40px;}
 }
 
 
@@ -826,6 +850,15 @@ right: 0;}
     .meet-author-left .sign{font-size: 70px;}
     .cookbook-get-copy{padding: 60px 0;}
     .cookbook-get-copy .tag-list{max-width: 990px;}
+
+    .contact-section{padding: 60px 0;}
+    .contact-right .circle-text{width: 80px;transform: translate(12%, -33%);}
+    .form-information h1{font-size: 48px;}
+    .form-information .line{margin: 20px 0;}
+    .form-information h3{font-size: 18px;}
+    .contact-right{padding: 30px 50px;}
+    .contact-form{margin-top: 25px;padding-right: 0;}
+    .btm-contact-submit{position: relative;right: 0; width: 100%; text-align: right; display: flex; align-items: center;justify-content:end;gap: 10px;}
     
 
 
@@ -1046,7 +1079,15 @@ right: 0;}
     .cookbook-get-copy{padding: 60px 0;}
     .cookbook-get-copy .cookbook-heading h2{font-size: 36px;}
 
-
+    .contact-section{padding: 40px 0;}
+    .contact-right .circle-text{width: 60px;transform: translate(12%, -33%);}
+    .form-information h1{font-size: 40px;}
+    .form-information .line{margin: 15px 0;}
+    .form-information h3{font-size: 16px;}
+    .contact-right{padding: 25px 35px;}
+    .contact-form{margin-top: 15px;padding-right: 0;}
+    .contact-form .form-group .form-input{height: 36px;}
+    .btm-contact-submit{position: relative;right: 0; width: 100%; text-align: right; display: flex; align-items: center;justify-content:end;gap: 10px;}
 
 
 }
@@ -1298,6 +1339,19 @@ right: 0;}
     .cookbook-get-copy .cookbook-heading h2{font-size: 36px;}
     .take-a-peek{display: none;}
 
+    .contact-section{padding:0;}
+    .contact-section .custom-container{padding: 0;}
+    .contact-section .wrapper{border-radius: 0;}
+    .contact-left{width: 100%;}
+    .contact-left img{border-radius: 0;}
+    .contact-right .circle-text{position: relative;transform: none;}
+    .contact-right{width: 100%; padding: 25px 15px;       flex-direction: column;}
+    .form-information{margin-top: 15px;}
+    .form-information h1{font-size: 40px;}
+    .form-information h3{font-size: 16px;}
+    .form-information .line{margin: 15px 0;}
+    .contact-form{padding-right: 0;    margin-top: 30px;}
+    .btm-contact-submit{position: relative;right: 0; width: 100%; text-align: right; display: flex; align-items: center;justify-content:end;gap: 10px;}
 
 
 

@@ -462,7 +462,7 @@ right: 0;}
 .cookbook-slider .item{padding: 25px;}
 .cookbook-slider .box .image-box{position: relative;}
 .cookbook-slider .box .image-box img{width: 100%;aspect-ratio: 100/100;object-fit: cover;object-position: center center;border-radius: 15px;}
-.cookbook-slider .box h3{font-weight: 400;font-size: 14px;line-height: 1.79;text-align: center;color: #3C1E21;padding: 18px;width: 100%;}
+.cookbook-slider .box h3{font-weight: 400;font-size: 14px;line-height: 1.79;text-align: center;color: #3C1E21;padding: 18px 10px;width: 100%;}
 .cookbook-slider .box h3 a{color: inherit;}
 .cookbook-tag-section .tag-list{max-width: 960px;margin: 0 auto;padding: 83px 0;}
 .testimonial{padding: 50px 0;overflow: hidden;}
@@ -473,7 +473,7 @@ right: 0;}
 .testimonial-slider .item .icon{position: absolute;left: 20px;top: -45px;}
 .testimonial-slider .item h2{font-weight: 600;font-size: 22.8516px;line-height: 1.58;color: #3C1E21;}
 .testimonial-slider .item .content{margin: 30px 0 0 0;}
-.testimonial-slider .item .content p{margin: 0;font-weight: 400;font-size: 24px;line-height: 36px;color: #3C1E21;}
+.testimonial-slider .item .content p{margin: 0;font-weight: 400;font-size: 24px;line-height: 1.5;color: #3C1E21;}
 .testimonial-slider .item .content p + p{margin: 0 0 15px 0;}
 .testimonial-slider .item .review-name-post{margin-top: 75px;}
 .testimonial-slider .item .review-name-post h4{font-weight: 600;font-size: 12.9062px;line-height: 1.39;letter-spacing: 1.4px;text-transform: uppercase;color: #3C1E21;}
@@ -482,8 +482,8 @@ right: 0;}
 .testimonial-slider .item.pink svg path{fill:#A5396B;}
 .testimonial-slider .item.sky .box{background-color: #A2DCF7;}
 .testimonial-slider .item.sky svg path{fill:#4a8dac;}
-.slick-arrow{background-color: transparent;border: 0;padding: 0;width: 50px;aspect-ratio: 100/100;position: absolute;top:50%;transform: translateY(-50%);}
-.slick-arrow img{padding: 15px 0;}
+.slick-arrow{background-color: transparent;border: 0;padding: 0;width: 50px;aspect-ratio: 100/100;position: absolute;top:50%;transform: translateY(-50%);z-index: 1;}
+.slick-arrow img{padding: 15px 0;width: 100%;}
 .slick-arrow.slick-next{right: 0;}
 
 .meet-author{padding: 90px 0 0 0;}
@@ -493,7 +493,8 @@ right: 0;}
 .meet-author .meet-author-right{width: 51%;}
 .meet-author .meet-author-right .hetal-photo{width: 100%;}
 .meet-author .meet-author-right .hetal-photo img{width: 100%;aspect-ratio: 100/154;object-position: center center;object-fit: cover;border-radius: 100%;    border-radius: 500px;}
-.meet-author .meet-author-right .icon{position: absolute;right: 45px;top: -90px;}
+.meet-author .meet-author-right .icon{position: absolute;right: 45px;top: -90px;width: 135px;}
+.meet-author .meet-author-right .icon img{width: 100%;aspect-ratio: 100/163;object-fit: cover;object-position: center center;}
 .meet-author-left .cookbook-heading{text-align: left;}
 .meet-author-left .cookbook-heading h2{font-size: 60px;padding-bottom: 34px;}
 .meet-author-left .cookbook-heading h2::after{background-image: url('../images/pattern-green.png');}
@@ -610,6 +611,29 @@ right: 0;}
     .work-left .content h3{font-size: 26px;}
     .work-right h2{font-size: 48px;}
     .work-right{padding: 80px 0 80px 60px;}
+
+
+    .cookbook-banner{padding: 70px 0;}
+    .cookbook-banner .wrapper{padding: 50px 40px;}
+    .cookbook-banner-left .image-box .top-right-icon{width: 120px; top: -80px;}
+    .cookbook-banner-left .image-box .bottom-left-icon{width: 130px;}
+    .cookbook-banner-left{width: 45%;margin-top: 80px;}
+    .cookbook-banner-right{width: 55%;}
+    .cookbook-heading h2{font-size: 60px;}
+    .cookbook-heading p{margin: 20px 0;    font-size: 18px;}
+    .tag-list a{font-size: 18px; }
+    .cookbook-banner-left .image-box {width: 75%;}
+    .cookbook-pink-content .content p{font-size: 18px;}
+    .cookbook-slider-section{padding: 60px 0;}
+    .cookbook-slider .item {padding: 15px;}
+    .cookbook-tag-section .tag-list{padding: 60px 0;}
+    .meet-author .wrapper{padding: 50px;}
+    .meet-author .meet-author-right .icon {top: -75px; width: 100px;}
+    .meet-author .meet-author-right {width: 45%;}
+    .meet-author .meet-author-left {width: 50%;}
+    .meet-author-left .cookbook-heading p{font-size: 20px;}
+    .meet-author-left .sign{font-size: 85px;}
+    .cookbook-get-copy{padding: 80px 0;}
 
 
 }
@@ -771,6 +795,30 @@ right: 0;}
     .work-right h2{font-size: 40px;}
     .work-right ul li{font-size: 16px;}
 
+    .cookbook-banner{padding: 70px 0;}
+    .cookbook-banner .wrapper{padding: 50px 40px;}
+    .cookbook-banner-left .image-box .top-right-icon{width: 120px; top: -80px;}
+    .cookbook-banner-left .image-box .bottom-left-icon{width: 130px;}
+    .cookbook-banner-left{width: 45%;margin-top: 80px;}
+    .cookbook-banner-right{width: 55%;}
+    .cookbook-heading h2{font-size: 48px;}
+    .cookbook-heading p{margin: 20px 0;    font-size: 18px;}
+    .tag-list a{font-size: 16px;    padding: 8px 14px;}
+    .cookbook-banner-left .image-box {width: 75%;}
+    .cookbook-pink-content .content p{font-size: 18px;}
+    .cookbook-slider-section{padding: 60px 0;}
+    .cookbook-slider .item {padding: 15px;}
+    .cookbook-tag-section .tag-list{padding: 0 0 60px 0;}
+    .meet-author .wrapper{padding: 50px;}
+    .meet-author .meet-author-right .icon {top: -75px; width: 100px;}
+    .meet-author-left .cookbook-heading h2{font-size: 48px;}
+    .meet-author .meet-author-right {width: 45%;}
+    .meet-author .meet-author-left {width: 50%;}
+    .meet-author-left .cookbook-heading p{font-size: 18px;}
+    .meet-author-left .sign{font-size: 70px;}
+    .cookbook-get-copy{padding: 60px 0;}
+    .cookbook-get-copy .tag-list{max-width: 990px;}
+
 
 }
 
@@ -784,8 +832,6 @@ right: 0;}
     .btn-custom{font-size: 16px;padding: 10px 20px 11px;}
     .btn-order-now a{margin: 0;font-size: 12px;padding: 5px 10px 7px;}
     .subscribe-substack {padding: 25px;}
-
-
 
     .announcebar-book{width: 50px;}
     .logo a img{height: 22px;}
@@ -946,6 +992,47 @@ right: 0;}
     .work-right {padding: 40px;}
     .work-right h2{font-size: 34px;}
     .work-right ul li{font-size: 14px;}
+
+
+    .cookbook-banner{padding: 60px 0;}
+    .cookbook-banner-left {width: 45%;}
+    .cookbook-banner-right {width: 55%;}
+    .cookbook-banner .wrapper{padding: 25px;}
+    .cookbook-banner-left .image-box{width: 250px;}
+    .cookbook-banner-left .image-box .top-right-icon {width: 90px;top: -55px;}
+    .cookbook-banner-left .image-box .bottom-left-icon {width: 90px;}
+    .cookbook-heading h2{font-size: 36px;}
+    .cookbook-heading p{font-size: 14px;    margin: 18px 0;}
+    .tag-list a{font-size: 14px;padding: 7px 14px;}
+    .tag-list .item {padding: 3px;}
+    .cookbook-pink-content .wrapper{border-radius: 0; padding: 15px;}
+    .cookbook-pink-content .content::before{width: 36px;top:-5px;}
+    .cookbook-pink-content .content{padding-left: 40px;}
+    .cookbook-pink-content .content p{font-size: 16px;}
+    .cookbook-slider-section{padding: 60px 0 0 0;}
+    .cookbook-slider-section .cookbook-heading p{margin: 25px 0;}
+   
+    .cookbook-slider .item{padding:0 15px;}
+    .cookbook-slider .box h3{padding: 15px 0;}
+    .cookbook-tag-section .tag-list{padding: 40px 0;}
+    .testimonial-slider {max-width: 600px;}
+    .testimonial-slider .item{padding: 0;}
+    .testimonial-slider .item .content p{font-size: 16px;}
+    .slick-arrow{width: 30px;}
+    .testimonial-slider .item .box {padding: 35px 70px;}
+    .testimonial-slider .item .review-name-post {margin-top: 30px;}
+    .meet-author{padding: 40px 0 0 0;}
+    .meet-author .meet-author-right .icon{width: 90px;}
+    .meet-author .meet-author-left{width: 100%;margin-top: 25px;}
+    .meet-author .meet-author-right{width: 100%;}
+    .meet-author .wrapper{padding: 50px 20px 20px;border-radius: 0;}
+    .meet-author .meet-author-right .hetal-photo{max-width: 300px;margin: 0 auto;}
+    .meet-author-left .cookbook-heading{text-align: center;}
+    .meet-author-left .cookbook-heading h2{font-size: 36px;}
+    .meet-author-left .cookbook-heading p{font-size: 14px;    margin: 18px 0;}
+    .meet-author-left .sign{margin: 0;font-size: 48px;}
+    .cookbook-get-copy{padding: 60px 0;}
+    .cookbook-get-copy .cookbook-heading h2{font-size: 36px;}
 
 
 
@@ -1155,6 +1242,55 @@ right: 0;}
     .work-right{width: calc(100% + 24px);margin-left: -12px;padding: 25px; margin-right: -12px;}
     .work-right::before{display: none;}
     .work-right h2{font-size: 30px;}
+
+    .cookbook-banner{padding: 0 0 0;}
+    .cookbook-banner-left{width: 100%;margin: 50px 0;}
+    .cookbook-banner-right{width: 100%;}
+    .cookbook-banner .wrapper{padding: 15px;}
+    .cookbook-banner .custom-container{padding: 0;}
+    .cookbook-banner-left .image-box{width: 250px;}
+    .cookbook-banner-left .image-box .top-right-icon {width: 90px;top: -55px;}
+    .cookbook-banner-left .image-box .bottom-left-icon {width: 90px;}
+    .cookbook-heading h2{font-size: 36px;}
+    .cookbook-heading p{font-size: 14px;    margin: 18px 0;}
+    .tag-list a{font-size: 14px;padding: 7px 14px;}
+    .cookbook-pink-content .custom-container{padding: 0;}
+    .cookbook-pink-content .wrapper{border-radius: 0;    padding: 15px;}
+    .cookbook-pink-content .content::before{width: 36px;top:0;}
+    .cookbook-pink-content .content{padding-left: 40px;}
+    .cookbook-pink-content .content p{font-size: 16px;}
+    .cookbook-slider-section{padding: 60px 0 0 0;}
+    .cookbook-slider-section .cookbook-heading p{margin: 25px 0;}
+    .cookbook-slider .item{padding:0 25px;}
+    .cookbook-slider .box h3{padding: 15px 0;}
+    .cookbook-tag-section .tag-list{padding: 40px 0;}
+    .testimonial .custom-container-small{padding: 0;}
+    .testimonial-slider .item{padding: 0;}
+    .testimonial-slider .item .content p{font-size: 16px;}
+    .slick-arrow{width: 30px;}
+    .testimonial-slider .item .box {padding: 35px;}
+    .testimonial-slider .item .review-name-post {margin-top: 30px;}
+    .meet-author{padding: 40px 0 0 0;}
+    .meet-author .meet-author-right .icon{width: 90px;}
+    .meet-author .wrapper{flex-wrap: wrap-reverse;}
+    .meet-author .meet-author-left{width: 100%;margin-top: 25px;}
+    .meet-author .meet-author-right{width: 100%;}
+    .meet-author .wrapper{padding: 50px 20px 20px;border-radius: 0;}
+    .meet-author .custom-container{padding: 0;}
+    .meet-author .meet-author-right .hetal-photo{max-width: 300px;margin: 0 auto;}
+    .meet-author-left .cookbook-heading{text-align: center;}
+    .meet-author-left .cookbook-heading h2{font-size: 36px;}
+    .meet-author-left .cookbook-heading p{font-size: 14px;    margin: 18px 0;}
+    .meet-author-left .sign{margin: 0;font-size: 48px;}
+    .cookbook-get-copy{padding: 60px 0;}
+    .cookbook-get-copy .cookbook-heading h2{font-size: 36px;}
+
+
+
+
+
+
+
 
 }
 

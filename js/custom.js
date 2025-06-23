@@ -1,5 +1,4 @@
 
-// header sticky
 $(window).scroll(function(){
       if ($(this).scrollTop() > 274) {
           $('header').addClass('fixed');
@@ -7,7 +6,6 @@ $(window).scroll(function(){
           $('header').removeClass('fixed');
       }
 });
-
 $(document).ready(function () {	
 	$('.menu-icon').click(function () {
 		$('body').toggleClass('showSidebar');
@@ -185,19 +183,4 @@ $(document).ready(function () {
 			
 		});
 	}	
-	
-	
-});
-$(window).on("load resize", function (e) {
-	if ($('.our-approach-list').length > 0) {
-		$('.our-approach-list h3').matchHeight();
-		$('.our-approach-list p').matchHeight();
-	}
-	if ($('.our-engagement-models-list').length > 0) {
-		$('.our-engagement-models-list .box ul').matchHeight();
-		$('.our-engagement-models-list .box .short-desc').matchHeight();
-	}
-	if ($('.about-values-list').length > 0) {
-		$('.about-values-list .content p').matchHeight();
-	}
 });

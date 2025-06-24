@@ -1,6 +1,6 @@
 
 $(window).scroll(function(){
-      if ($(this).scrollTop() > 274) {
+      if ($(this).scrollTop() > 300) {
           $('header').addClass('fixed');
       } else {
           $('header').removeClass('fixed');

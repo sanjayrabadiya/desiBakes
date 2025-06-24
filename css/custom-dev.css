@@ -71,8 +71,14 @@ textarea:-moz-placeholder {color: var(--black);}
 .bg-purple{background-color: #8839A5;}
 .bg-light-purple{background-color: #6E7DC7;}
 .bg-blue{background-color: #1D405F;}
-.btn-custom{background: var(--dark-pink);border-radius: 50px;font-weight: 400;font-size: 20px;line-height: 1.6;color: #FFFFFF;text-transform: uppercase;padding: 13px 33px 15px ;transition: 0.5s; font-family: var(--primary-font);   display: inline-block;border:0}
-.btn-custom:hover{background-color: var(--black);}
+.btn-custom{background: var(--dark-pink);border-radius: 50px;font-weight: 400;font-size: 20px;line-height: 1.6;color: #FFFFFF;text-transform: uppercase;padding: 13px 33px 15px ;transition: 0.5s; font-family: var(--primary-font);   display: inline-block;border:0;position: relative;z-index: 0;overflow: hidden;}
+.btn-custom:before, 
+.btn-custom:after {content: '';background: #333;height: 50%;width: 0;z-index: -1;position: absolute;transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);-webkit-transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);}
+.btn-custom:before {top: 0;left: 0;right: auto;}
+.btn-custom:after {bottom: 0;right: 0;left: auto;}
+.btn-custom:hover:before {width: 100%;right: 0;left: auto;}
+.btn-custom:hover:after {width: 100%;left: 0;right: auto;}
+
 .arrow-button{font-weight: 500;font-size: 23.7791px;line-height: 1.55;display: flex;align-items: center;justify-content: center;letter-spacing: 0.594478px;text-transform: lowercase;color: var(--pragraph);white-space: nowrap;}
 .arrow-button svg{margin-left: 35px;}
 .announcebar{background-color: var(--light-pink);padding: 5px 0;}
@@ -93,16 +99,22 @@ textarea:-moz-placeholder {color: var(--black);}
 .search-box input{width: 100%;height: 100%;padding: 0 5px 0 52px;font-family: var(--primary-font);font-weight: 600;font-size: 16.5px;line-height: 2;color: var(--black);border-radius: 50px;border:1px solid var(--black)}
 .search-box .search-icon{position: absolute;top:50%;transform: translateY(-50%);left: 20px;}
 .main-menu{background-color: var(--dark-pink);padding: 0px 44px;}
-.main-menu ul{display: flex;align-items: center;justify-content: space-between;transition: 0.5;}
+.main-menu ul{display: flex;align-items: center;justify-content: space-between;transition: 0.5s;}
 .main-menu li a{font-weight: 400;font-size: 22.6986px;line-height: 1.54;color: var(--white);text-transform: uppercase;padding: 15px 25px;display: block;}
 .main-menu li:hover a{background-color: var(--light-pink);}
 .sidebar{position: fixed;left: -100%; top: 0;width: 100%;height: 100%;background-color: var(--white);padding: 15px;z-index: 1;transition: 0.5s;}
 .btn-close-sidebar{background-color: transparent;border:0;padding: 0;width: 24px;height: 24px;text-align: center;line-height: 24px;}
 body.showSidebar .sidebar{left: 0;}
 body.showSidebar{overflow: hidden;}
-header.fixed .header-main-menu{position: fixed;margin: 0 auto;z-index: 9;left: 0;right: 0;top: 0;}
+.header-main-menu{position: relative;margin: 0 auto;z-index: 9;left: 0;right: 0;top: 0;-webkit-transition: all 0.5s ease;-moz-transition: position 10s;-ms-transition: position 10s;-o-transition: position 10s;transition: all 0.5s ease;}
+header.fixed .header-main-menu{position: fixed;animation: smoothScroll 1s forwards;}
+@keyframes smoothScroll {
+	0% {transform: translateY(-65px);}
+	100% {transform: translateY(0px);}
+}
+
 .home-product-box{padding: 90px 0 50px;}
-.product-box-list{display: flex;flex-wrap: wrap;margin: 0 -12px;    justify-content: center;}
+.product-box-list{display: flex;flex-wrap: wrap;margin: 0 -12px;justify-content: center;}
 .product-box-list .item{padding: 12px;width: 25%;}
 .prdt-box{position: relative;}
 .prdt-box .image-box{position: relative;overflow: hidden;display: block;}
@@ -482,7 +494,7 @@ right: 0;}
 
 .travel-banner{padding: 110px 0 50px;}
 .travel-banner .wrapper{display: flex; flex-wrap: wrap;align-items: center;justify-content: space-between;}
-.travel-banner-left {width: 62%;}
+.travel-banner-left {width: 62.3%;}
 .travel-banner-left img{width: 100%;    aspect-ratio: 100 / 78;object-fit: cover;object-position: center center;}
 .travel-banner-right{width: 33.34%;}
 .travel-banner-right h1{font-family: var(--heading-font);font-weight: 600;font-size: 70px;line-height: 1.21;text-transform: uppercase;color: var(--dark-pink);}
@@ -500,7 +512,7 @@ right: 0;}
 
 .travel-index{padding: 25px 0;}
 .travel-index .wrapper{display: flex; flex-wrap: wrap;align-items: center;justify-content: space-between;}
-.travel-index-left {width: 62%;}
+.travel-index-left {width: 62.3%;}
 .travel-index-left img{width: 100%;    aspect-ratio: 100 / 78;object-fit: cover;object-position: center center;}
 .travel-index-right{width: 33.34%;}
 .travel-index-right h2{font-family: var(--dark-pink);font-weight: 600;font-size: 60px;line-height: 0.84;text-transform: uppercase;color: var(--dark-pink);}
@@ -515,7 +527,7 @@ right: 0;}
 .single-image img{width: 100%;height: auto;}
 
 .travel-page-content .wrapper{display: flex; flex-wrap: wrap;justify-content: space-between;margin: 80px 0;}
-.travel-page-content-left {width: 62%;}
+.travel-page-content-left {width: 62.3%;}
 .travel-page-content-right{width: 33.34%;}
 .travel-hetal-info{width: 100%;background-color: #F5F5F5;padding: 18px 20px;}
 .travel-hetal-info .hetal-photo img{width: 100%;height: auto;}
@@ -545,7 +557,7 @@ right: 0;}
 .day-trip .heading h2{font-family: var(--heading-font-roman);font-weight: 400;font-size: 120px;line-height: 1.25;color: var(--black);}
 .day-trip .heading h3{font-family: var(--heading-font);font-weight: 600;font-size: 60px;line-height: 0.84;text-align: center;text-transform: uppercase;color: var(--dark-pink);}
 .day-trip-list{border:1px solid var(--black);margin-top: 53px;}
-.day-trip-list .item{display: flex;align-items: center;}
+.day-trip-list .item{display: flex;align-items: center;flex-wrap: wrap;}
 .day-trip-list .item:nth-child(even){flex-direction: row-reverse;border-top: 1px solid var(--black);border-bottom: 1px solid var(--black);}
 .day-trip-list .day-image{width: 37%;}
 .day-trip-list .day-image img{width: 100%;height: auto;}
@@ -571,6 +583,14 @@ right: 0;}
 .btn-post-comment button{min-width: 373px;}
 .travel-page-section{padding: 60px 0;overflow: hidden;}
 .travel-page-section .heading h2{text-align: center;font-family: var(--heading-font);font-style: normal;font-weight: 600;font-size: 88.2503px;line-height: 1.3;text-transform: uppercase;color: var(--dark-pink);}
+.travel-page-content-left img{width: 100%;height: auto;margin-top: 40px;}
+.travel-page-content-left h2{font-family: var(--heading-font);font-weight: 700;font-size: 70px;line-height: 1.21;text-transform: uppercase;color: #303030;}
+.travel-page-content-left h3{font-family: var(--primary-font);font-weight: 600;font-size: 35px;line-height: 1.69;color: var(--dark-pink);margin-top: 30px;}
+.travel-page-content-left p{font-family: var(--primary-font);font-weight: 600;font-size: 18px;line-height: 2.22;text-align: justify;color: var(--heading-font);margin: 48px 0;}
+.travel-page-content-left ul{margin: 20px 0 40px;padding-left: 25px;}
+.travel-page-content-left ul li{font-family: var(--primary-font);font-style: normal;font-weight: 400;font-size: 18px;line-height: 2.22;text-align: left;color: var(--heading-font);list-style-type: disc;}
+.travel-page-content-left h4{font-family: var(--heading-font);font-weight: 600;font-size: 60px;line-height: 1.69;color: var(--dark-pink);margin-top: 30px;text-transform: uppercase;}
+.travel-page-content-left h4 ~ p {margin-top: 12px;}
 
 @media only screen and (min-width: 1600px){
     .meet-author .custom-container{max-width: 1500px;}
@@ -694,6 +714,45 @@ right: 0;}
     .cookbook-get-copy{padding: 80px 0;}
     .contact-section{padding: 100px 0;overflow: hidden;}
     .contact-form{margin-top: 40px;}
+
+    .travel-page-content-right,
+    .travel-banner-right,
+    .travel-index-right{width: 38%;}
+    .travel-page-content-left,
+    .travel-banner-left,
+    .travel-index-left{width: 60%;}
+    .travel-banner-right h1{font-size: 48px;}
+    .travel-banner-right ul li{font-size: 20px;}
+    .travel-banner-right ul li + li {margin-top: 13px;}
+    .travel-banner-right p {font-size: 16px;line-height: 1.7;}
+    .travel-details h2{font-size: 40px;}
+    .travel-details ul li{font-size: 16px;line-height: 1.9;}
+    .travel-index-right h2{font-size: 48px;}
+    .travel-index-right h2 span{font-size: 92px;}
+    .travel-index-right ul li a{font-size: 20px;line-height: 1.9;}
+    .btn-final-itinerary a {font-size: 20px;padding: 10px 60px;}
+    .travel-page-content .wrapper{margin: 50px 0;}
+    .travel-hetal-info .content h2{font-size:70px;}
+    .travel-hetal-info .content p{font-size: 20px;}
+    .tarvel-my-favorites h2{font-size: 48px;}
+    .tarvel-my-favorites{padding: 40px;}
+    .tarvel-my-favorites .prdt-box .details .color-list .item {font-size: 12px;width: 28px; margin: 0 2px;}
+    .travel-prdt-sec h2{font-size: 48px;}
+    .travel-prdt-sec{padding: 40px;}
+    .travel-page-content-left h2{font-size: 48px;}
+    .travel-page-content-left h3{font-size: 30px;}
+    .travel-page-content-left h4{font-size: 48px;}
+    .travel-page-content-left p{font-size: 16px;margin: 20px 0;line-height: 1.7;}
+    .travel-page-content-left ul li{font-size: 16px;line-height: 1.7;}
+    .day-trip .heading h2{font-size: 80px;}
+    .day-trip .heading h3{font-size: 48px;}
+    .day-trip-list .content h4{font-size: 48px;}
+    .day-trip-list .content ul li{font-size: 20px;}
+    .day-trip-list .content {padding: 30px 50px;}
+    .day-trip-list .content ul li span { padding-left: 0;}
+    .any-question h2{font-size: 48px;}
+    .btn-post-comment button { min-width: 300px;}
+    .travel-page-section .heading h2{font-size: 60px;}
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
     .custom-container,
@@ -869,6 +928,60 @@ right: 0;}
     .contact-right{padding: 30px 50px;}
     .contact-form{margin-top: 25px;padding-right: 0;}
     .btm-contact-submit{position: relative;right: 0; width: 100%; text-align: right; display: flex; align-items: center;justify-content:end;gap: 10px;}  
+
+    .travel-banner{padding: 50px 0;}
+    .travel-banner-right {width: 36%;}
+    .travel-banner-right h1{font-size: 40px;        line-height: 1;}
+    .travel-banner-right p{font-size: 14px;}
+    .travel-banner-right ul li{font-size: 18px;}
+    .travel-banner-right ul li img{width: 20px;margin-right: 12px;}
+    .travel-details .wrapper{padding: 0 10px 0 8px;}
+    .travel-details h2{font-size: 25px;}
+    .travel-details ul{margin-top: 30px;}
+    .travel-index{padding: 25px 0 0;}
+    .travel-index-right h2{font-size: 36px;}
+    .travel-index-right h2 span{font-size: 60px;}
+    .travel-index-right ul li a,
+    .travel-index-right ul li::marker{font-size: 18px;}
+    .travel-index-right {width: 35%;}
+    .btn-final-itinerary {margin-top: 10px;}
+    .btn-final-itinerary a {padding: 8px 25px;    font-size: 20px;}
+    .single-image{margin-top: 50px;}
+    .travel-page-content .wrapper{flex-wrap: wrap-reverse;margin: 0;}
+    .travel-page-content-left{width: 48%;margin-top: 50px;}
+    .travel-page-content-right{width: 48%;padding: 12px;}
+    .travel-social-media a {margin: 0 15px;}
+    .travel-hetal-info .content h2{font-size: 70px;}
+    .travel-hetal-info .content p{font-size: 19px;}
+    .tarvel-my-favorites{padding: 30px;}
+    .tarvel-my-favorites h2{font-size: 43px;}
+    .product-box-list{margin: 25px -4px;}
+    .tarvel-my-favorites .product-box-list .item{padding: 4px;}
+    .tarvel-my-favorites .prdt-box .details .color-list .item{width: 20px;    margin: 0 3px;font-size: 9px;}
+    .tarvel-my-favorites .prdt-box .details h3{font-size: 11px;}
+    .travel-prdt-sec{padding: 30px;}
+    .travel-prdt-sec h2{font-size: 43px;}
+    .travel-prdt-sec .list-of-travel .item h3{font-size: 11px;}
+    .travel-page-content-left h2{font-size: 35px;}
+    .travel-page-content-left h3{font-size: 24px;margin-top: 15px;}
+    .travel-page-content-left h4{font-size: 40px;}
+    .travel-page-content-left p{font-size: 18px;line-height: 1.8; margin: 25px 0;text-align: left;}
+    .travel-page-content-left ul{font-size: 20px;margin: 10px 0 20px 0;}
+    .travel-page-content-left ul li{line-height: 2;}
+    .travel-page-content-left img{margin-top: 25px;}
+    .day-trip .heading h2{font-size: 58px;}
+    .day-trip .heading h3{font-size: 40px;}
+    .day-trip-list .content{padding: 15px 25px;}
+    .day-trip-list .content h4{font-size: 40px;}
+    .day-trip-list .content ul{margin-top: 15px;}
+    .day-trip-list .content ul li{font-size: 16px;}
+    .day-trip-list .content ul li b {min-width: 56px;}
+    .day-trip-list .content ul li span{padding: 0;}
+    .any-question h2{font-size: 40px;}
+    .questions-form{margin-top: 31px;padding: 0 15px;}
+    .btn-post-comment button { min-width: 254px;}
+    .travel-page-section .heading h2{font-size: 40px;}
+    .travel-page-section {padding: 0 0 40px 0;}
 }
 @media only screen and (min-width: 768px) and (max-width: 991px){
     .custom-container,
@@ -956,12 +1069,13 @@ right: 0;}
     .home-travel .heading h2 {font-size: 40px;}
     .home-travel .heading{padding: 0 20px;}
     .home-travel .heading p{font-size: 18px;}
+    .home-travel-slider .item {padding: 5px;}
     .travel-slider-box .video-box .play-icon svg{width: 44px;height: 44px;}
     .travel-slider-box .video-box .details{right: 10px;bottom: 7px;}
     .travel-slider-box .video-box .details a{font-size: 16px;}
     .travel-slider-box .content{padding: 7px;}
-    .travel-slider-box .content h3, .travel-slider-box .content h5{font-size: 16px;}
-    .travel-slider-box .content h4{font-size: 20px;margin: 5px 0;}
+    .travel-slider-box .content h3, .travel-slider-box .content h5{font-size: 14px;}
+    .travel-slider-box .content h4{font-size: 18px;margin: 5px 0;}
     .client-logo h2{font-size: 25px;}
     .footer-top-section{padding: 65px 0;}
     .footer-top-left{width: 100%;}
@@ -1071,6 +1185,62 @@ right: 0;}
     .contact-form{margin-top: 15px;padding-right: 0;}
     .contact-form .form-group .form-input{height: 36px;}
     .btm-contact-submit{position: relative;right: 0; width: 100%; text-align: right; display: flex; align-items: center;justify-content:end;gap: 10px;}
+
+    .travel-banner{padding: 0;}
+    .travel-banner-left{width: 100%;}
+    .travel-banner-right{width: 100%;padding: 20px;}
+    .travel-banner-right h1{font-size: 45px;}
+    .travel-banner-right p{font-size: 15px;}
+    .travel-banner-right ul li{font-size: 18px;}
+    .travel-banner-right ul li img{width: 20px;margin-right: 12px;}
+    .travel-details .wrapper{padding: 0 10px 0 8px;}
+    .travel-details h2{font-size: 25px;}
+    .travel-details ul{margin-top: 30px;}
+    .travel-index{padding: 25px 0 0;}
+    .travel-index-right h2{font-size: 36px;}
+    .travel-index-right h2 span{font-size: 60px;}
+    .travel-index-right ul li a,
+    .travel-index-right ul li::marker{font-size: 18px;}
+    .travel-index-right {width: 35%;}
+    .btn-final-itinerary {margin-top: 10px;}
+    .btn-final-itinerary a {padding: 8px 25px;    font-size: 20px;}
+    .single-image{margin-top: 50px;}
+    .travel-page-content .wrapper{flex-wrap: wrap-reverse;margin: 0;}
+    .travel-page-content-left{width: 48%;margin-top: 50px;}
+    .travel-page-content-right{width: 48%;padding: 12px;}
+    .travel-social-media a {margin: 0 15px;}
+    .travel-hetal-info .content h2{font-size: 70px;}
+    .travel-hetal-info .content p{font-size: 19px;}
+    .tarvel-my-favorites{padding: 30px;}
+    .tarvel-my-favorites h2{font-size: 43px;}
+    .product-box-list{margin: 25px -4px;}
+    .tarvel-my-favorites .product-box-list .item{padding: 4px;}
+    .tarvel-my-favorites .prdt-box .details .color-list .item{width: 20px;    margin: 0 3px;font-size: 9px;}
+    .tarvel-my-favorites .prdt-box .details h3{font-size: 11px;}
+    .travel-prdt-sec{padding: 30px;}
+    .travel-prdt-sec h2{font-size: 43px;}
+    .travel-prdt-sec .list-of-travel .item h3{font-size: 11px;}
+    .travel-page-content-left h2{font-size: 35px;}
+    .travel-page-content-left h3{font-size: 20px;margin-top: 15px;}
+    .travel-page-content-left h4{font-size: 30px;}
+    .travel-page-content-left p{font-size: 18px;line-height: 1.8; margin: 25px 0;text-align: left;}
+    .travel-page-content-left ul{font-size: 20px;margin: 10px 0 20px 0;}
+    .travel-page-content-left ul li{line-height: 2;}
+    .travel-page-content-left img{margin-top: 25px;}
+    .day-trip .heading h2{font-size: 58px;}
+    .day-trip .heading h3{font-size: 30px;}
+    .day-trip-list .content{padding: 15px 25px;}
+    .day-trip-list .content h4{font-size: 30px;}
+    .day-trip-list .content ul{margin-top: 15px;}
+    .day-trip-list .content ul li{font-size: 14px;}
+    .day-trip-list .content ul li b {min-width: 56px;}
+    .day-trip-list .content ul li span{padding: 0;}
+    .any-question h2{font-size: 34px;}
+    .questions-form{margin-top: 31px;padding: 0 15px;}
+    .btn-post-comment button { min-width: 254px;}
+    .travel-page-section .heading h2{font-size: 40px;}
+    .travel-page-section {padding: 0 0 40px 0;}
+
 }
 @media only screen and (min-width: 768px){
     .display-mobile{display: none;}
@@ -1316,6 +1486,74 @@ right: 0;}
     .form-information .line{margin: 15px 0;}
     .contact-form{padding-right: 0;    margin-top: 30px;}
     .btm-contact-submit{position: relative;right: 0; width: 100%; text-align: right; display: flex; align-items: center;justify-content:end;gap: 10px;}
+
+    .travel-banner{padding: 0;}
+    .travel-banner .custom-container{padding: 0;}
+    .travel-banner-left{width: 100%;}
+    .travel-banner-right{width: 100%;padding: 20px;}
+    .travel-banner-right h1{font-size: 45px;}
+    .travel-banner-right p{font-size: 15px;}
+    .travel-banner-right ul li{font-size: 18px;}
+    .travel-banner-right ul li img{width: 20px;margin-right: 12px;}
+    .travel-details .wrapper{padding: 0 10px 0 8px;}
+    .travel-details h2{font-size: 25px;}
+    .travel-details ul{margin-top: 30px;}
+    .travel-index{padding: 25px 0 0;}
+    .travel-index .custom-container{padding: 0;}
+    .travel-index-left{width: 100%;}
+    .travel-index-right{width: 100%;padding: 20px;}
+    .travel-index-right h2{font-size: 36px;}
+    .travel-index-right h2 span{font-size: 72px;}
+    .travel-index-right ul li a,
+    .travel-index-right ul li::marker{font-size: 18px;}
+    .btn-final-itinerary a {padding: 10px 50px;}
+    .single-image{margin-top: 50px;}
+    .travel-page-content .custom-container{padding: 0;}
+    .travel-page-content .wrapper{flex-wrap: wrap-reverse;margin: 0;}
+    .travel-page-content-left{width: 100%;margin-top: 50px;}
+    .travel-page-content-right{width: 100%;padding: 12px;}
+    .travel-social-media a {margin: 0 15px;}
+    .travel-hetal-info .content h2{font-size: 70px;}
+    .travel-hetal-info .content p{font-size: 19px;}
+    .tarvel-my-favorites{padding: 30px;}
+    .tarvel-my-favorites h2{font-size: 43px;}
+    .product-box-list{margin: 25px -4px;}
+    .tarvel-my-favorites .product-box-list .item{padding: 4px;}
+    .tarvel-my-favorites .prdt-box .details .color-list .item{width: 20px;    margin: 0 3px;font-size: 9px;}
+    .tarvel-my-favorites .prdt-box .details h3{font-size: 11px;}
+    .travel-prdt-sec{padding: 30px;}
+    .travel-prdt-sec h2{font-size: 43px;}
+    .travel-prdt-sec .list-of-travel .item h3{font-size: 11px;}
+    .travel-page-content-left h2{font-size: 35px;padding: 0 5px 0 25px;}
+    .travel-page-content-left h3{font-size: 20px;padding: 0 25px; margin-top: 15px;}
+    .travel-page-content-left h4{font-size: 30px;padding: 0 25px;}
+    .travel-page-content-left p{font-size: 18px;line-height: 1.8; padding: 0 25px;margin: 25px 0;text-align: left;}
+    .travel-page-content-left ul{font-size: 20px;padding: 0 25px 0 50px; margin: 10px 0 20px 0;}
+    .travel-page-content-left ul li{line-height: 2;}
+    .travel-page-content-left img{margin-top: 25px;}
+    .day-trip .custom-container{padding: 0;}
+    .day-trip .heading h2{font-size: 58px;}
+    .day-trip .heading h3{font-size: 30px;}
+    .day-trip-list{border:0;}
+    .day-trip-list .item{width: 100%;flex-wrap: wrap-reverse;}
+    .day-trip-list .day-image{width: 100%;}
+    .day-trip-list .content{width: 100%;padding: 30px 25px;}
+    .day-trip-list .content h4{font-size: 36px;}
+    .day-trip-list .content ul{margin-top: 29px;}
+    .day-trip-list .content ul li{flex-direction: column;font-size: 18px;}
+    .day-trip-list .content ul li b{font-size: 28px;}
+    .day-trip-list .content ul li span{padding: 0;}
+    .day-trip-list .content ul li + li{margin-top: 30px;}
+    .any-question h2{font-size: 34px;}
+    .questions-form{margin-top: 31px;padding: 0 15px;}
+    .questions-form .row-box{width: 100%;flex-wrap: wrap;}
+    .questions-form .row-box .box{width: 100%;}
+    .questions-form .row-box .box + .box{margin-top: 24px;}
+    .btn-post-comment button { min-width: 254px;}
+    .travel-page-section .heading h2{font-size: 40px;}
+    .travel-page-section {padding: 0 0 40px 0;}
+
+
 }
 @media only screen and (max-width: 575px){
     .custom-container{max-width: 100%;}  

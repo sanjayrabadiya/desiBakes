@@ -599,7 +599,7 @@ right: 0;}
 .recipe-details-page-content-left {width: 62.3%;}
 .recipe-details-page-content-right{width: 33.34%;}
 .recipe-details-page-content-right .hetal-photo{position: relative;}
-.recipe-details-page-content-right .hetal-photo > img{max-width: 327px;height: auto;margin: 0 auto;border-bottom: 5px solid #E8CF82;}
+.recipe-details-page-content-right .hetal-photo > img{max-width: 300px;height: auto;margin: 0 auto;border-bottom: 5px solid #E8CF82;}
 .recipe-details-page-content-right .bg-pattern {width: 421px;height: auto;margin: 0 auto;position: absolute;bottom: -70px;left: 0;right: 0;z-index: -1;}
 .recipe-details-page-content-right .bg-pattern img{width: 100%;aspect-ratio: 100/100;object-fit: cover;object-position: center center;}
 .hetal-about-info{background-color: #DCECDD;max-width: 430px;margin: 0 auto;margin-top: 100px;padding: 35px;}
@@ -1083,7 +1083,7 @@ right: 0;}
     .travel-social-media a {margin: 0 15px;}
     .travel-hetal-info .content h2{font-size: 70px;}
     .travel-hetal-info .content p{font-size: 19px;}
-    .tarvel-my-favorites{padding: 30px;}
+    .tarvel-my-favorites{padding: 20px;}
     .tarvel-my-favorites h2{font-size: 43px;}
     .product-box-list{margin: 25px -4px;}
     .tarvel-my-favorites .product-box-list .item{padding: 4px;}
@@ -1372,7 +1372,7 @@ right: 0;}
     .travel-social-media a {margin: 0 15px;}
     .travel-hetal-info .content h2{font-size: 70px;}
     .travel-hetal-info .content p{font-size: 19px;}
-    .tarvel-my-favorites{padding: 30px;}
+    .tarvel-my-favorites{padding: 20px;}
     .tarvel-my-favorites h2{font-size: 43px;}
     .product-box-list{margin: 25px -4px;}
     .tarvel-my-favorites .product-box-list .item{padding: 4px;}
@@ -1725,7 +1725,7 @@ right: 0;}
     .travel-social-media a {margin: 0 15px;}
     .travel-hetal-info .content h2{font-size: 70px;}
     .travel-hetal-info .content p{font-size: 19px;}
-    .tarvel-my-favorites{padding: 30px;}
+    .tarvel-my-favorites{padding: 20px;}
     .tarvel-my-favorites h2{font-size: 40px;}
     .product-box-list{margin: 25px -4px;}
     .tarvel-my-favorites .product-box-list .item{padding: 4px;}

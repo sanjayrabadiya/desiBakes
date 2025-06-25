@@ -142,6 +142,7 @@ header.fixed .header-main-menu{position: fixed;animation: smoothScroll 1s forwar
 .subscribe-substack .buttons{margin-left: 18px;}
 .subscribe-substack .buttons {white-space: nowrap;}
 .searchbox-section{padding: 89px 0 71px 0;}
+.searchbox-section .custom-container{padding: 0;}
 .searchbox-section h2{font-family: var(--primary-font);font-weight: 400;font-size: 48px;line-height: 1.23;color: var(--pragraph);}
 .searchbox-section h3{font-family: var(--primary-font);font-weight: 400;font-size: 25px;line-height: 2.36;color: var(--pragraph);margin-top: 28px;}
 .searchbox-section .search-form{max-width: 1114px;margin: 0 auto;margin-top: 28px;}
@@ -592,7 +593,7 @@ right: 0;}
 .travel-page-content-left h4{font-family: var(--heading-font);font-weight: 600;font-size: 60px;line-height: 1.69;color: var(--dark-pink);margin-top: 30px;text-transform: uppercase;}
 .travel-page-content-left h4 ~ p {margin-top: 12px;}
 
-
+.plugin-sec img{width: 100%;}
 .recipe-details-page-content{padding: 110px 0 50px;}
 .recipe-details-page-content .wrapper{display: flex; flex-wrap: wrap;justify-content: space-between;}
 .recipe-details-page-content-left {width: 62.3%;}
@@ -608,9 +609,9 @@ right: 0;}
 .recipe-details-social-media{justify-content: center;}
 .recipe-details-social-media a{margin: 0 10px;}
 .recipe-details-search{max-width: 430px;margin: 44px auto;}
-.recipe-details-search h2{ font-family: var(--primary-font);font-weight: 400;font-size: 33px;line-height: 50px;text-align: center;padding: 8px;border:1px solid var(--black);color: var(--heading);width: 100%;text-align: center;}
+.recipe-details-search h2{ font-family: var(--primary-font);font-weight: 400;font-size: 33px;line-height: 1.5;text-align: center;padding: 8px;border:1px solid var(--black);color: var(--heading);width: 100%;text-align: center;}
 .recipe-details-searchbox{position: relative;margin-top: 34px;}
-.recipe-details-searchbox input{width: 100%;background-color: #EEEEEE;font-weight: 400;font-size: 20.9853px;line-height: 1;padding: 19px;color: var(--black);border:0;}
+.recipe-details-searchbox input{width: 100%;background-color: #EEEEEE;font-weight: 400;font-size: 20.9853px;line-height: 1;padding: 19px 50px 19px 19px;color: var(--black);border:0;}
 .recipe-details-searchbox input::-webkit-input-placeholder{color:#726F6D;font-style: italic;}
 .recipe-details-searchbox input::-moz-placeholder {color: #726F6D;font-style: italic;}
 .recipe-details-searchbox input:-ms-input-placeholder {color:#726F6D;font-style: italic;}
@@ -627,7 +628,7 @@ right: 0;}
 .latest-recipes-details-section .sec-heading h2{font-size: 52px;}
 .btn-subscribe-to-substack{text-align: center;margin-top: 35px;}
 
-.hetal-tips .custom-container .wrapper{max-width: 1284px;position: relative;background-color: #A0C9A3;padding: 44px 57px;}
+.hetal-tips .wrapper{max-width: 1284px;position: relative;background-color: #A0C9A3;padding: 44px 57px;}
 .hetal-tips .circle-heatal-photo{position: absolute;right: 0;max-width: 555px;    top: 50%;transform: translate(50%,-50%);}
 .hetal-tips .circle-heatal-photo img{width: 100%;aspect-ratio: 100/100;object-fit: cover;object-position: center center;}
 .hetal-tips .content{padding: 35px;background-color: #BFE4C2;}
@@ -656,13 +657,13 @@ right: 0;}
 .health-recipe-info p a{color: inherit;font-weight: 700;}
 .leave-comment{margin: 88px 0;}
 .leave-comment .head{text-align: center;}
-.leave-comment h2{font-family: var(--heading-font);font-style: normal;font-weight: 500;font-size: 30.2562px;line-height: 1.33;color: var(--dark-pink);}
+.leave-comment h2{font-family: var(--heading-font);font-style: normal;font-weight: 500;font-size: 30.2562px;line-height: 1.33;color: var(--dark-pink);text-transform: uppercase;}
 .leave-comment p{font-weight: 600;font-size: 23.9528px;line-height: 1;color: var(--pragraph);margin: 20px 0 0;}
 .review-star{display: flex;align-items: center;justify-content: center; margin-top: 15px;}
 .review-star .item{margin: 0 8px;}
 .review-star  img{width: 28px;height: auto;}
 
-.comment-form .comment-row{display: flex;justify-content: space-between;}
+.comment-form .comment-row{display: flex;justify-content: space-between;flex-wrap: wrap;}
 .comment-form .form-group {margin-top: 40px;position: relative;}
 .comment-form .comment-row .form-group{width: 48%;}
 .comment-form .form-group .form-input{background-color: var(--white);height: 52px;font-family: var(--primary-font);font-weight: 500;font-size: 18.0311px;line-height: 1.6;color: #3B3B3B;padding: 12px 20px;width: 100%;border:1px solid var(--black);}
@@ -846,6 +847,42 @@ right: 0;}
     .any-question h2{font-size: 48px;}
     .btn-post-comment button { min-width: 300px;}
     .travel-page-section .heading h2{font-size: 60px;}
+
+    .recipe-details-page-content{padding: 70px 0 50px;}
+    .recipe-details-page-content-left{ width: 60%;}
+    .recipe-details-page-content-right{width: 38%;}
+    .hetal-about-info p{font-size: 20px;}
+    .recipe-details-search h2{font-size: 30px;}
+    .other-content .content h2{font-size: 48px;}
+    .other-content .content h3{font-size: 30px;}
+    .latest-recipes-details-section .sec-heading h2{font-size: 46px;}
+    .btn-subscribe-to-substack{margin-top: 0;}
+    .hetal-tips .wrapper{max-width: 77%;padding: 30px;}
+    .hetal-tips .content{padding: 20px;}
+    .hetal-tips .content h3{font-size: 20px;}
+    .hetal-tips .content h2 {font-size: 56px;}
+    .hetal-tips .content ul li {font-size: 16px;}
+    .hetal-tips .content ul {max-width: 530px;}
+    .hetal-tips .circle-heatal-photo{max-width: 465px;}
+    .tips-substitute{margin: 60px 0 0 0;}
+    .tips-substitute .main-title h2{font-size: 48px;}
+   .tips-substitute .content {border-radius: 36px;padding: 50px 50px;margin-top: 20px;}
+   .tips-substitute .content h3 {font-size: 36px;}
+   .tips-substitute .content p{font-size: 20px;}
+   .tips-substitute .content ul li{font-size: 20px;}
+   .tips-substitute .details {max-width: 780px;}
+   .health-recipe-info{padding: 40px 50px;}
+   .health-recipe-info h2 {font-size: 48px;}
+   .health-recipe-info ul li{font-size: 18px;}
+   .health-recipe-info .main-info {padding: 25px 36px;font-size: 18px;}
+   .health-recipe-info p{font-size: 18px;}
+   .recipe-category-list-section{padding: 48px 0;}
+
+
+
+
+
+
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
     .custom-container,
@@ -884,7 +921,7 @@ right: 0;}
     .category-list .item{padding: 15px 10px;}
     .category-list-section{padding: 60px 0;}
     .searchbox-section h2{font-size: 36px;}
-    .searchbox-section{padding: 60px 0;}
+    .searchbox-section{padding: 60px;}
     .holi-creation .left-box .content{padding: 33px ;}
     .holi-creation .left-box .content h2{font-size: 40px;}
     .holi-creation .left-box .content p{font-size: 12px;max-width: 240px;}
@@ -1024,7 +1061,7 @@ right: 0;}
 
     .travel-banner{padding: 50px 0;}
     .travel-banner-right {width: 36%;}
-    .travel-banner-right h1{font-size: 40px;        line-height: 1;}
+    .travel-banner-right h1{font-size: 40px; line-height: 1;}
     .travel-banner-right p{font-size: 14px;}
     .travel-banner-right ul li{font-size: 18px;}
     .travel-banner-right ul li img{width: 20px;margin-right: 12px;}
@@ -1075,6 +1112,37 @@ right: 0;}
     .btn-post-comment button { min-width: 254px;}
     .travel-page-section .heading h2{font-size: 40px;}
     .travel-page-section {padding: 0 0 40px 0;}
+
+    .recipe-details-page-content{padding: 50px 0;}
+    .recipe-details-page-content-left{width: 62.3%;}
+    .recipe-details-page-content-right{width: 36%;}
+    .recipe-details-page-content-right .bg-pattern{max-width: 100%;}
+    .hetal-about-info p {font-size: 20px;}
+    .other-content .content h2 {font-size: 48px;}
+    .other-content .content h3 {font-size: 28px;}
+    .other-content .content p{margin: 20px 0;font-size: 18px;}
+    .latest-recipes-details-section{padding: 0 20px;}
+    .latest-recipes-details-section .sec-heading h2{font-size:36px;}
+    .hetal-tips .content h2{font-size: 40px;}
+    .hetal-tips .content h3{font-size: 24px;}
+    .hetal-tips .content ul li{font-size: 18px;}
+    .hetal-tips .content {padding: 25px;}
+    .hetal-tips .wrapper{padding: 30px;}
+    .hetal-tips .content ul{max-width: 530px;}
+    .hetal-tips .circle-heatal-photo{max-width: 325px;transform:translate(0,-50%)}
+    .tips-substitute{margin-top: 60px;}
+    .tips-substitute .main-title h2{font-size: 48px;}
+    .tips-substitute .content h3{font-size: 36px;}
+    .tips-substitute .content{padding: 40px;}
+    .health-recipe-info{padding: 40px;}
+    .health-recipe-info h2{font-size: 48px;}
+    .health-recipe-info ul li{font-size: 18px;}
+    .health-recipe-info .main-info{font-size: 18px;}
+    .health-recipe-info p{font-size: 18px;}
+    
+
+
+
 }
 @media only screen and (min-width: 768px) and (max-width: 991px){
     .custom-container,
@@ -1110,8 +1178,8 @@ right: 0;}
     .product-service .details h3{font-size: 25px;}
     .product-service .details p{font-size: 15px;}
     .subscribe-substack p {font-size: 16px;}
-    .searchbox-section{padding: 50px 12px;}
-    .searchbox-section h2{font-size: 25px;padding: 0 25px;}
+    .searchbox-section{padding: 50px 25px;}
+    .searchbox-section h2{font-size: 25px;}
     .searchbox-section h3{font-size: 20px;}
     .searchbox-section .search-form .input-search{font-size: 18px;padding: 0 15px;height: 46px;}
     .searchbox-section .search-form .btn-custom{min-width: 170px;}    
@@ -1334,6 +1402,54 @@ right: 0;}
     .travel-page-section .heading h2{font-size: 40px;}
     .travel-page-section {padding: 0 0 40px 0;}
 
+
+    .recipe-details-page-content{padding: 0;}
+    .recipe-details-page-content-left{width: 100%;}
+    .recipe-details-page-content-right{width: 100%;margin-top: 50px;}
+    .recipe-details-page-content-right .bg-pattern{max-width: 375px;width: 100%;}
+    .hetal-about-info h2{font-size: 36px;max-width: 220px;}
+    .hetal-about-info h2 span{font-size: 80px;}
+    .hetal-about-info{padding: 35px 20px;}
+    .hetal-about-info p {font-size: 18px;}
+    .recipe-details-search{margin: 25px auto;max-width:max-content;}
+    .recipe-details-search h2{font-size: 24px;padding: 8px 15px;}
+    .recipe-details-searchbox{margin-top: 20px;}
+    .recipe-details-searchbox input {padding: 12px 50px 12px 12px;}
+    .other-content .content{padding: 0 20px;}
+    .other-content .content h2{font-size: 36px;}
+    .other-content .content h3 {font-size: 24px;margin-top: 10px;}
+    .other-content .content p{font-size: 16px;margin: 15px 0;}
+    .latest-recipes-details-section .sec-heading h2{font-size: 40px;}
+    .btn-subscribe-to-substack{margin: 0 0 25px 0;}
+
+    .hetal-tips{margin-top: 175px;}
+    .hetal-tips .wrapper{padding: 15px;}
+    .hetal-tips .circle-heatal-photo{transform: none;max-width: 345px;margin: -175px auto 0;left: 0;top: 0;}
+    .hetal-tips .content{padding: 170px 15px 15px;}
+    .hetal-tips .content h2{font-size: 60px;text-align: center;}
+    .hetal-tips .content h3{font-size: 28px;text-align: center;}
+    .tips-substitute{margin-top: 70px;padding: 0;}
+    .tips-substitute .main-title{padding: 0 25px;}
+    .tips-substitute .main-title h2{font-size: 48px;}
+    .tips-substitute .content{border: 0;padding: 0 25px;}
+    .tips-substitute .content h3 {font-size: 35px;}
+    .subscribe-substack{border-radius: 0;}
+    .health-recipe-info{border-radius: 0;padding: 25px;}
+    .health-recipe-info h2{font-size: 50px;}
+    .health-recipe-info ul li{font-size: 20px;}
+    .health-recipe-info .main-info{width: calc(100% + 50px);margin-left: -25px;border-radius: 0;padding: 25px;}
+    .comment-list .item {margin: 0 0 40px 0;}
+    .leave-comment{padding: 0 25px;}
+    .leave-comment p{font-size: 18px;}
+    .review-star .item{margin: 0 4px;}    
+    .comment-form .comment-row .form-group{width: 100%;}
+    .comment-form .form-group,
+    .btn-submit-review{margin-top: 30px;}
+    .comment-list{margin-top: 60px;}
+    .comment-list .item.replay-item{padding: 15px;}
+    .recipe-searchbox-section{padding: 40px 25px;}
+    .recipe-category-list-section{padding:  25px;}
+
 }
 @media only screen and (min-width: 768px){
     .display-mobile{display: none;}
@@ -1379,9 +1495,10 @@ right: 0;}
     .subscribe-substack p{font-size: 17px;}
     .subscribe-substack p br{display: none;}
     .subscribe-substack .buttons{margin: 0;text-align: center;width: 100%;}
-    .searchbox-section{padding: 50px 12px;}
-    .searchbox-section h2{font-size: 25px;padding: 0 25px;}
-    .searchbox-section h3{font-size: 20px;}
+    .searchbox-section{padding: 50px 25px;}
+    .searchbox-section h2{font-size: 25px;}
+    .searchbox-section h3{font-size: 25px;margin-top: 15px;}
+    .searchbox-section .search-form{margin-top: 15px;}
     .searchbox-section .search-form .form-data{flex-wrap: wrap;justify-content: center;}
     .searchbox-section .search-form .input-search{font-size: 18px;padding: 0 15px;text-align: center;}
     .searchbox-section .search-form .btn-custom{margin: 25px 0 0;min-width: 170px;}    
@@ -1609,13 +1726,13 @@ right: 0;}
     .travel-hetal-info .content h2{font-size: 70px;}
     .travel-hetal-info .content p{font-size: 19px;}
     .tarvel-my-favorites{padding: 30px;}
-    .tarvel-my-favorites h2{font-size: 43px;}
+    .tarvel-my-favorites h2{font-size: 40px;}
     .product-box-list{margin: 25px -4px;}
     .tarvel-my-favorites .product-box-list .item{padding: 4px;}
     .tarvel-my-favorites .prdt-box .details .color-list .item{width: 20px;    margin: 0 3px;font-size: 9px;}
     .tarvel-my-favorites .prdt-box .details h3{font-size: 11px;}
     .travel-prdt-sec{padding: 30px;}
-    .travel-prdt-sec h2{font-size: 43px;}
+    .travel-prdt-sec h2{font-size: 40px;}
     .travel-prdt-sec .list-of-travel .item h3{font-size: 11px;}
     .travel-page-content-left h2{font-size: 35px;padding: 0 5px 0 25px;}
     .travel-page-content-left h3{font-size: 20px;padding: 0 25px; margin-top: 15px;}
@@ -1645,6 +1762,60 @@ right: 0;}
     .btn-post-comment button { min-width: 254px;}
     .travel-page-section .heading h2{font-size: 40px;}
     .travel-page-section {padding: 0 0 40px 0;}
+
+    .recipe-details-page-content{padding: 0;}
+    .recipe-details-page-content .custom-container{padding: 0;}    
+    .recipe-details-page-content-left{width: 100%;}
+    .recipe-details-page-content-right{width: 100%;}
+    .recipe-details-page-content-right .bg-pattern{max-width: 375px;width: 100%;}
+    .hetal-about-info h2{font-size: 36px;max-width: 220px;}
+    .hetal-about-info h2 span{font-size: 80px;}
+    .hetal-about-info{padding: 35px 20px;}
+    .hetal-about-info p {font-size: 18px;}
+    .recipe-details-search{margin: 25px auto;max-width:max-content;}
+    .recipe-details-search h2{font-size: 24px;padding: 8px 15px;}
+    .recipe-details-searchbox{margin-top: 20px;}
+    .recipe-details-searchbox input {padding: 12px 50px 12px 12px;}
+    .other-content .content{padding: 0 20px;}
+    .other-content .content h2{font-size: 36px;}
+    .other-content .content h3 {font-size: 24px;margin-top: 10px;}
+    .other-content .content p{font-size: 16px;margin: 15px 0;}
+    .latest-recipes-details-section .sec-heading h2{font-size: 40px;}
+    .btn-subscribe-to-substack{margin: 0 0 25px 0;}
+    .hetal-tips{margin-top: 175px;}
+    .hetal-tips .custom-container{padding: 0;}
+    .hetal-tips .wrapper{padding: 15px;}
+    .hetal-tips .circle-heatal-photo{transform: none;max-width: 345px;margin: -175px auto 0;left: 0;top: 0;}
+    .hetal-tips .content{padding: 170px 15px 15px;}
+    .hetal-tips .content h2{font-size: 60px;text-align: center;}
+    .hetal-tips .content h3{font-size: 28px;text-align: center;}
+    .tips-substitute{margin-top: 70px;padding: 0;}
+    .tips-substitute .custom-container{padding: 0;}
+    .tips-substitute .main-title{padding: 0 25px;}
+    .tips-substitute .main-title h2{font-size: 48px;}
+    .tips-substitute .content{border: 0;padding: 0 25px;}
+    .tips-substitute .content h3 {font-size: 35px;}
+    .subscribe-substack{border-radius: 0;}
+    .health-recipe-info{border-radius: 0;padding: 25px;}
+    .health-recipe-info h2{font-size: 50px;}
+    .health-recipe-info ul li{font-size: 20px;}
+    .health-recipe-info .main-info{width: calc(100% + 50px);margin-left: -25px;border-radius: 0;padding: 25px;}
+    .comment-list .item {margin: 0 0 40px 0;}
+    .leave-comment{padding: 0 25px;}
+    .leave-comment p{font-size: 18px;}
+    .review-star .item{margin: 0 4px;}
+    
+    .comment-form .comment-row .form-group{width: 100%;}
+    .comment-form .form-group,
+    .btn-submit-review{margin-top: 30px;}
+    .comment-list{margin-top: 60px;}
+    .comment-list .item.replay-item{padding: 15px;}
+    .recipe-searchbox-section{padding: 40px 25px;}
+    .recipe-category-list-section{padding:  25px;}
+
+
+
+
 
 
 }
